@@ -2,11 +2,7 @@
   "name": "wellcome-design-system",
   "version": "0.0.1",
   "description": "Design system for Wellcome and Wellcome Collection products",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "tokens.json",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wellcometrust/wellcome-design-system.git"
