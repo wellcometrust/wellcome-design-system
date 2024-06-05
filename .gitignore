@@ -1,0 +1,14 @@
+# Built
+node_modules/
+
+# Logs
+*.log
+
+# MacOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+.nova/
