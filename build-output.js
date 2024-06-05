@@ -1,28 +1,50 @@
+import fs from 'node:fs';
 import { registerTransforms } from '@tokens-studio/sd-transforms';
 import StyleDictionary from 'style-dictionary';
+import tokens from './tokens.json' assert { type: "json" };
 
-// will register them on StyleDictionary object
-// that is installed as a dependency of this package.
+function slugify(str) {
+  return str
+    .replace(/^\s+|\s+$/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9 -]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-');
+}
+
+
+Object.entries(tokens).map(([key, value]) => {
+  if (key.startsWith('$')) return; // meta stuff
+
+  try {
+    fs.writeFileSync(`./src/${slugify(key)}.json`, JSON.stringify(value), { flag: 'w' })
+  } catch (err) {
+  }
+});
+
+
 registerTransforms(StyleDictionary);
-
 StyleDictionary.registerTransform({
-  name: 'addPrefix',
+  name: 'wds',
   type: 'name',
   transform: (prop) => {
     const prefix = prop.filePath.split('/').at(-1).split('.').at(0);
+    const titlePrefix = prefix.charAt(0).toUpperCase() + prefix.slice(1);
+    const propName = prop.name;
+    const titlePropName = propName.charAt(0).toUpperCase() + propName.slice(1);
 
-    return `${prefix}.${prop.path.join('.')}`;
+    return `wds${titlePrefix}${titlePropName}`;
   }
 });
 
 
 const sd = new StyleDictionary({
 
-  source: ['src/*.json'],
+  source: ['./src/*.json'],
   preprocessors: ['tokens-studio'],
   platforms: {
     js: {
-      transforms: ['addPrefix'],
+      transforms: ['wds'],
       transformGroup: 'tokens-studio',
       buildPath: 'dist/js/',
       files: [
