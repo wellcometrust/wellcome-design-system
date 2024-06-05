@@ -1,0 +1,49 @@
+{
+  "source": [
+    "tokens/input.json"
+  ],
+  "platforms": {
+    "css": {
+      "transformGroup": "tokens-studio",
+      "transforms": ["name/kebab", "custom/rem"],
+      "buildPath": "generatedTokens/",
+      "options": {
+        "fileHeader": "customFileHeader"
+      },
+      "files": [
+        {
+          "destination": "css/variables.css",
+          "format": "css/variables"
+        },
+        {
+          "destination": "scss/variables.scss",
+          "format": "scss/variables"
+        }
+      ]
+    },
+    "js": {
+      "transformGroup": "tokens-studio",
+      "transforms": ["name/pascal", "custom/rem"],
+      "buildPath": "generatedTokens/",
+      "options": {
+        "fileHeader": "customFileHeader"
+      },
+      "files": [
+        {
+          "destination": "js/variables.js",
+          "format": "javascript/es6"
+        }
+      ]
+    },
+    "json": {
+      "transformGroup": "tokens-studio",
+      "buildPath": "generatedTokens/",
+      "files": [
+        {
+          "destination": "tokens.json",
+          "format": "json/nested"
+        }
+      ]
+    }
+  }
+}

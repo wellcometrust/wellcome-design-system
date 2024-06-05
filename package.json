@@ -2,7 +2,8 @@
   "name": "wellcome-design-system",
   "version": "0.0.1",
   "description": "Design system for Wellcome and Wellcome Collection products",
-  "main": "tokens.json",
+  "main": "dist/js/variables.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wellcometrust/wellcome-design-system.git"
@@ -12,5 +13,9 @@
   "bugs": {
     "url": "https://github.com/wellcometrust/wellcome-design-system/issues"
   },
-  "homepage": "https://www.figma.com/design/6bg5Y3Y4gLXgSdVa8Da8Vy/Wellcome-design-system?node-id=316-9&t=c6cHC23OsadCwIg3-0"
+  "homepage": "https://www.figma.com/design/6bg5Y3Y4gLXgSdVa8Da8Vy/Wellcome-design-system?node-id=316-9&t=c6cHC23OsadCwIg3-0",
+  "dependencies": {
+    "@tokens-studio/sd-transforms": "^0.16.1",
+    "style-dictionary": "^4.0.0-prerelease.27"
+  }
 }
