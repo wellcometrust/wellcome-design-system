@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import { registerTransforms } from '@tokens-studio/sd-transforms';
 import StyleDictionary from 'style-dictionary';
 import tokens from './tokens.json' assert { type: "json" };
+import config from './config.js';
 
 function slugify(str) {
   return str
@@ -12,50 +13,20 @@ function slugify(str) {
     .replace(/-+/g, '-');
 }
 
-
+// Split the tokens.json (from Tokens Studio) into its top-level keys -- useful
+// if we want to e.g. prefix variables by their type
 Object.entries(tokens).map(([key, value]) => {
-  if (key.startsWith('$')) return; // meta stuff
+  if (key.startsWith('$')) return; // Tokens Studio meta info, not required for variables
 
   try {
     fs.writeFileSync(`./src/${slugify(key)}.json`, JSON.stringify(value), { flag: 'w' })
   } catch (err) {
+    console.log(err);
   }
 });
-
 
 registerTransforms(StyleDictionary);
-StyleDictionary.registerTransform({
-  name: 'wds',
-  type: 'name',
-  transform: (prop) => {
-    const prefix = prop.filePath.split('/').at(-1).split('.').at(0);
-    const titlePrefix = prefix.charAt(0).toUpperCase() + prefix.slice(1);
-    const propName = prop.name;
-    const titlePropName = propName.charAt(0).toUpperCase() + propName.slice(1);
-
-    return `wds${titlePrefix}${titlePropName}`;
-  }
-});
-
-
-const sd = new StyleDictionary({
-
-  source: ['./src/*.json'],
-  preprocessors: ['tokens-studio'],
-  platforms: {
-    js: {
-      transforms: ['wds'],
-      transformGroup: 'tokens-studio',
-      buildPath: 'dist/js/',
-      files: [
-        {
-          destination: 'variables.js',
-          format: 'javascript/es6'
-        }
-      ]
-    }
-  }
-});
+const sd = new StyleDictionary(config);
 
 sd.cleanAllPlatforms();
 sd.buildAllPlatforms();

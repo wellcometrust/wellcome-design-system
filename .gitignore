@@ -1,6 +1,7 @@
 # Built
 node_modules/
 dist/
+src/
 
 
 # Logs
