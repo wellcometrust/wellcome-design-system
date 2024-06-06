@@ -1,3 +1,4 @@
-import tokens from './dist/json/variables.json' assert { type: "json" };
+import tokensFromJson from './dist/json/variables.json' assert { type: "json" };
 
-export default tokens;
+export const tokens = tokensFromJson;
+// export const icons = someObjectContainingTheIcons
