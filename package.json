@@ -1,8 +1,8 @@
 {
   "name": "wellcome-design-system",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Design system for Wellcome and Wellcome Collection products",
-  "main": "dist/js/variables.js",
+  "main": "index.js",
   "type": "module",
   "repository": {
     "type": "git",
