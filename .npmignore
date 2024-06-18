@@ -1,5 +1,5 @@
 /src
-build-output.js
+build.js
 config.js
 package-lock.json
 tokens.json
