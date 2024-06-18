@@ -8,6 +8,9 @@
     "type": "git",
     "url": "git+https://github.com/wellcometrust/wellcome-design-system.git"
   },
+  "scripts": {
+    "build": "node build.js"
+  },
   "author": "",
   "license": "MIT",
   "bugs": {
