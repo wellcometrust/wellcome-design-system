@@ -44,7 +44,7 @@ for (const file of files) {
     { componentName: componentName },
   );
 
-  fs.writeFile(`./dist/icons/react/index.js`, `export { default as ${componentName} } from './${componentName}.jsx';\n`, {flag: 'a+'}, err => {
+  fs.writeFile(`./dist/icons/react/index.js`, `export { default as ${componentName} } from './${componentName}.tsx';\n`, {flag: 'a+'}, err => {
     if (err) {
       console.error(err);
     }
