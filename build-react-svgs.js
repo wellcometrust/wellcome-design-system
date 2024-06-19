@@ -50,7 +50,7 @@ for (const file of files) {
     }
   });
 
-  fs.writeFile(`./dist/icons/react/${componentName}.jsx`, code, (err) => {
+  fs.writeFile(`./dist/icons/react/${componentName}.tsx`, code, (err) => {
     if (err) {
       console.log(err);
     }

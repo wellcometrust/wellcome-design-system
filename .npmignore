@@ -1,4 +1,5 @@
 /src
+/utils
 build-styles.js
 build-react-svgs.js
 fetch-svgs.js
