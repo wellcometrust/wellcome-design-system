@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import stream from 'node:stream';
 import { slugify } from './utils/slugify.js';
 import streamConsumers from 'node:stream/consumers';
+import 'dotenv/config';
 
 const { text } = streamConsumers;
 const apiRoot = 'https://api.figma.com/v1';
@@ -9,7 +10,7 @@ const docId = '4EC72TQpgvtio5zn1bSAVC';
 const filesUrl = `${apiRoot}/files/${docId}`;
 const imagesUrl = `${apiRoot}/images/${docId}?`
 const headers = {
-  "X-Figma-Token": "figd_3ut2fHgX9a_ndVZvLxQM60rlSfytGuz7Q-ZVzNYo"
+  'X-Figma-Token': process.env.FIGMA_PERSONAL_ACCESS_TOKEN
 }
 async function init() {
   // 1. Query the files endpoint to get the names/ids of the icons
