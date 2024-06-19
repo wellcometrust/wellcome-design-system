@@ -5,6 +5,9 @@ src/
 icons/
 
 
+# secret
+.env
+
 # Logs
 *.log
 
