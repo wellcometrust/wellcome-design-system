@@ -44,13 +44,13 @@ for (const file of files) {
     { componentName: componentName },
   );
 
-  fs.writeFile(`./dist/icons/react/index.js`, `export { default as ${componentName} } from './${componentName}.tsx';\n`, {flag: 'a+'}, err => {
+  fs.writeFile(`./dist/icons/react/index.js`, `export { default as ${componentName} } from './${componentName}.js';\n`, {flag: 'a+'}, err => {
     if (err) {
       console.error(err);
     }
   });
 
-  fs.writeFile(`./dist/icons/react/${componentName}.tsx`, code, (err) => {
+  fs.writeFile(`./dist/icons/react/${componentName}.js`, code, (err) => {
     if (err) {
       console.log(err);
     }

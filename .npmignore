@@ -6,3 +6,4 @@ fetch-svgs.js
 config.js
 package-lock.json
 tokens.json
+.env
