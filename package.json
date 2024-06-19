@@ -9,7 +9,7 @@
     "url": "git+https://github.com/wellcometrust/wellcome-design-system.git"
   },
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js && node build-icons.js"
   },
   "author": "",
   "license": "MIT",

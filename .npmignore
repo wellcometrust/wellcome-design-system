@@ -1,5 +1,6 @@
 /src
 build.js
+build-icons.js
 config.js
 package-lock.json
 tokens.json
