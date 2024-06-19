@@ -54,7 +54,7 @@ async function init() {
 
     stream.Readable
       .fromWeb(imageRes.body)
-      .pipe(fs.createWriteStream(`./dist/icons/${fileName}.svg`, { flag: 'a+' })); // Create the file if it doesn't exist
+      .pipe(fs.createWriteStream(`./dist/icons/svg/${fileName}.svg`, { flag: 'a+' })); // Create the file if it doesn't exist
   }
 }
 
