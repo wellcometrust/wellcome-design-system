@@ -8,7 +8,7 @@ const apiRoot = 'https://api.figma.com/v1';
 const docId = '4EC72TQpgvtio5zn1bSAVC';
 const filesUrl = `${apiRoot}/files/${docId}`;
 const imagesUrl = `${apiRoot}/images/${docId}?`
-const headers = { // Figma suggest using OAuth2 instead of a token
+const headers = {
   "X-Figma-Token": "figd_3ut2fHgX9a_ndVZvLxQM60rlSfytGuz7Q-ZVzNYo"
 }
 async function init() {
@@ -40,13 +40,13 @@ async function init() {
 
   const imagesJson = await imagesRes.json();
 
-  fs.mkdir(`./dist/icons/`, { recursive: true }, (err) => {
+  // 3. Query each icon svg URL and write it to disk
+  fs.mkdir(`./dist/icons/svg`, { recursive: true }, (err) => {
     if (err) {
       console.error(err);
     }
   });
 
-  // 3. Query each icon svg URL and write it to disk
   for (const [key, value] of Object.entries(imagesJson.images)) {
     const fileName = slugify(icons.find(i => i.id === key).name);
     const imageRes = await fetch(value);

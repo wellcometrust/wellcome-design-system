@@ -1,6 +1,7 @@
 /src
-build.js
-build-icons.js
+build-styles.js
+build-react-svgs.js
+fetch-svgs.js
 config.js
 package-lock.json
 tokens.json
