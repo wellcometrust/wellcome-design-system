@@ -57,17 +57,4 @@ for (const file of files) {
   });
 }
 
-// // now make an index
-// const reactFiles = fs.readdirSync(svgFolder)
-//   .map(fileName => path.join(svgFolder, fileName))
-
-// for (const file of reactFiles) {
-//   // export { default as a11Y } from './components/A11Y';
-
-//   fs.writeFile(`./dist/icons/react/index.js`, )
-
-
-
-
-
 
