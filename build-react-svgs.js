@@ -9,6 +9,13 @@ const isFile = fileName => {
   return fs.lstatSync(fileName).isFile();
 };
 
+// Copy svgs to dist
+fs.cp(svgFolder, `./dist/svg`, {recursive: true}, (err) => {
+  if (err) {
+    console.error(err);
+  }
+});
+
 const files = fs.readdirSync(svgFolder)
   .map(fileName => path.join(svgFolder, fileName))
   .filter(isFile);
