@@ -7,17 +7,17 @@ import { slugify } from './utils/slugify.js';
 
 // Split the tokens.json (from Tokens Studio) into its top-level keys -- useful
 // if we want to e.g. prefix variables by their type
-if (fs.existsSync(`./src`)) {
-  fs.rmSync(`./src`, { recursive: true, force: true });
+if (fs.existsSync(`./tmp`)) {
+  fs.rmSync(`./tmp`, { recursive: true, force: true });
 }
 
- fs.mkdirSync(`./src`);
+ fs.mkdirSync(`./tmp`);
 
 Object.entries(tokens).map(([key, value]) => {
   if (key.startsWith('$')) return; // Tokens Studio meta info, not required for variables
 
   try {
-    fs.writeFileSync(`./src/${slugify(key)}.json`, JSON.stringify(value), { flag: 'w' })
+    fs.writeFileSync(`./tmp/${slugify(key)}.json`, JSON.stringify(value), { flag: 'w' })
   } catch (err) {
     console.log(err);
   }

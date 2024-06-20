@@ -3,7 +3,7 @@ import path from 'node:path';
 import { transform } from '@svgr/core';
 import { pascalize } from './utils/pascalize.js';
 
-const svgFolder = `./dist/icons/svg`;
+const svgFolder = `./src/icons/svg`;
 
 const isFile = fileName => {
   return fs.lstatSync(fileName).isFile();
@@ -13,13 +13,13 @@ const files = fs.readdirSync(svgFolder)
   .map(fileName => path.join(svgFolder, fileName))
   .filter(isFile);
 
-fs.mkdir(`./dist/icons/react`, { recursive: true }, (err) => {
+fs.mkdir(`./src/icons/react`, { recursive: true }, (err) => {
   if (err) {
     console.error(err);
   }
 });
 
-fs.writeFile('./dist/icons/react/index.js', '', err => {
+fs.writeFile('./src/icons/react/index.js', '', err => {
   if (err) {
     console.error(err);
   }
@@ -38,19 +38,19 @@ for (const file of files) {
     svg,
     {
       icon: true,
-      jsxRuntime: 'automatic',
+      jsxRuntime: 'classic',
       plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx', '@svgr/plugin-prettier'],
     },
     { componentName: componentName },
   );
 
-  fs.writeFile(`./dist/icons/react/index.js`, `export { default as ${componentName} } from './${componentName}.js';\n`, {flag: 'a+'}, err => {
+  fs.writeFile(`./dist/index.js`, `export { default as ${componentName} } from './${componentName}.js';\n`, {flag: 'a+'}, err => {
     if (err) {
       console.error(err);
     }
   });
 
-  fs.writeFile(`./dist/icons/react/${componentName}.js`, code, (err) => {
+  fs.writeFile(`./src/icons/react/${componentName}.tsx`, code, (err) => {
     if (err) {
       console.log(err);
     }

@@ -1,0 +1,14 @@
+{
+  "include": ["src/**/*.tsx"],
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "NodeNext",
+    "declaration": false,
+    "outDir": "dist",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "skipLibCheck": true
+  }
+}

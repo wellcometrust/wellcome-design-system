@@ -9,7 +9,9 @@
     "url": "git+https://github.com/wellcometrust/wellcome-design-system.git"
   },
   "scripts": {
-    "build": "node build-styles.js && node fetch-svgs.js && node build-react-svgs.js"
+    "clean": "rimraf src && rimraf tmp && rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "node build-styles.js && node fetch-svgs.js && node build-react-svgs.js && tsc"
   },
   "author": "",
   "license": "MIT",
@@ -19,13 +21,16 @@
   "homepage": "https://www.figma.com/design/6bg5Y3Y4gLXgSdVa8Da8Vy/Wellcome-design-system?node-id=316-9&t=c6cHC23OsadCwIg3-0",
   "devDependencies": {
     "@svgr/core": "^8.1.0",
-    "@tokens-studio/sd-transforms": "^0.16.1",
-    "style-dictionary": "^4.0.0-prerelease.27"
-  },
-  "dependencies": {
     "@svgr/plugin-jsx": "^8.1.0",
     "@svgr/plugin-prettier": "^8.1.0",
     "@svgr/plugin-svgo": "^8.1.0",
-    "dotenv": "^16.4.5"
+    "@tokens-studio/sd-transforms": "^0.16.1",
+    "dotenv": "^16.4.5",
+    "rimraf": "^5.0.7",
+    "style-dictionary": "^4.0.0-prerelease.27",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
   }
 }

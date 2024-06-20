@@ -42,7 +42,7 @@ async function init() {
   const imagesJson = await imagesRes.json();
 
   // 3. Query each icon svg URL and write it to disk
-  fs.mkdir(`./dist/icons/svg`, { recursive: true }, (err) => {
+  fs.mkdir(`./src/icons/svg`, { recursive: true }, (err) => {
     if (err) {
       console.error(err);
     }
@@ -54,7 +54,7 @@ async function init() {
 
     stream.Readable
       .fromWeb(imageRes.body)
-      .pipe(fs.createWriteStream(`./dist/icons/svg/${fileName}.svg`, { flag: 'a+' })); // Create the file if it doesn't exist
+      .pipe(fs.createWriteStream(`./src/icons/svg/${fileName}.svg`, { flag: 'a+' })); // Create the file if it doesn't exist
   }
 }
 
