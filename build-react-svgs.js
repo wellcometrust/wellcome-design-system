@@ -9,7 +9,7 @@ const isFile = fileName => {
   return fs.lstatSync(fileName).isFile();
 };
 
-// Copy svgs to dist
+// Copy raw svgs to /dist for anyone who wants them unwrapped
 fs.cp(svgFolder, `./dist/svg`, {recursive: true}, (err) => {
   if (err) {
     console.error(err);
