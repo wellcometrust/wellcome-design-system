@@ -19,6 +19,6 @@
   "homepage": "https://www.figma.com/design/6bg5Y3Y4gLXgSdVa8Da8Vy/Wellcome-design-system?node-id=316-9&t=c6cHC23OsadCwIg3-0",
   "devDependencies": {
     "@tokens-studio/sd-transforms": "^0.16.1",
-    "style-dictionary": "^4.0.0-prerelease.27"
+    "style-dictionary": "^4.0.0-prerelease.34"
   }
 }
