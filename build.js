@@ -3,10 +3,10 @@ import { promises } from "node:fs";
 import StyleDictionary from 'style-dictionary';
 import { permutateThemes, registerTransforms } from '@tokens-studio/sd-transforms';
 
-import { generateSemanticFiles } from "./src/generateSemanticFiles.js";
+import { generateSemanticFiles } from "./utils/generateSemanticFiles.js";
 
-import { transformAttributeThemeable } from "./src/transforms/transformAttributeThemeable.js";
-import { transformRem } from "./src/transforms/transformRem.js";
+import { transformAttributeThemeable } from "./utils/transforms/transformAttributeThemeable.js";
+import { transformRem } from "./utils/transforms/transformRem.js";
 
 const excludedFromSemantic = ["collection-core", "collection-theme"];
 
@@ -44,7 +44,7 @@ async function run() {
         css: {
           transformGroup: 'tokens-studio',
           transforms: ["attribute/themeable", "name/kebab", "custom/rem"],
-          buildPath: 'build/css/',
+          buildPath: 'generatedTokens/css/',
           files: [
             {
               destination: "core.css",
