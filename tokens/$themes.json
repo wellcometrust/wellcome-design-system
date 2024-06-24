@@ -48,5 +48,16 @@
       "trustnet": "enabled"
     },
     "group": "brand"
+  },
+  {
+    "id": "6",
+    "name": "Collection",
+    "selectedTokenSets": {
+      "core": "source",
+      "semantic": "source",
+      "collection-core": "enabled",
+      "collection-theme": "enabled"
+    },
+    "group": "brand"
   }
 ]

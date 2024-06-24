@@ -4,12 +4,12 @@ import StyleDictionary from 'style-dictionary';
 import { getReferences, usesReferences } from "style-dictionary/utils";
 import { permutateThemes, registerTransforms } from '@tokens-studio/sd-transforms';
 
-
-// list of components that we have tokens for, assume the tokenset path for it is tokens/${comp}.json
-const components = ["button"];
+const components = ["collection-core", "collection-theme"];
 
 // filters only tokens originating from core.json
-export const coreFilter = (token) => token.filePath.endsWith("core.json");
+export const coreFilter = (token) => token.filePath.endsWith("core.json") && !token.filePath.includes("collection");
+
+export const collectionFilter = (token) => token.filePath.includes("collection");
 
 // filters only tokens originating from semantic sets (not core, not components) and also check themeable or not
 export const semanticFilter =
@@ -94,11 +94,16 @@ async function run() {
           transforms: ["attribute/themeable", "name/kebab"],
           buildPath: 'build/css/',
           files: [
-            // core tokens, e.g. for application developer
             {
               destination: "core.css",
               format: "css/variables",
               filter: coreFilter,
+            },
+            //   collection
+            {
+              destination: "product/collection.css",
+              format: "css/variables",
+              filter: collectionFilter,
             },
             // {
             //   destination: `${theme}.css`,
