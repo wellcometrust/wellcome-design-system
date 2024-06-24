@@ -4,7 +4,6 @@ import { slugify } from './utils/slugify.js';
 import streamConsumers from 'node:stream/consumers';
 import 'dotenv/config';
 
-const { text } = streamConsumers;
 const apiRoot = 'https://api.figma.com/v1';
 const docId = '4EC72TQpgvtio5zn1bSAVC';
 const filesUrl = `${apiRoot}/files/${docId}`;
