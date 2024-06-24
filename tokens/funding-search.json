@@ -1,0 +1,92 @@
+{
+  "color": {
+    "text": {
+      "body": {
+        "main": {
+          "value": "{colour.text.darkest}",
+          "type": "color"
+        },
+        "hint": {
+          "value": "{colour.text.dark}",
+          "type": "color"
+        },
+        "error": {
+          "value": "{colour.text.error}",
+          "type": "color"
+        },
+        "standfirst": {
+          "value": "{colour.text.darkest}",
+          "type": "color"
+        }
+      },
+      "heading": {
+        "main": {
+          "value": "{colour.text.darkest}",
+          "type": "color"
+        },
+        "alternate": {
+          "value": "{colour.text.darkest}",
+          "type": "color"
+        }
+      }
+    },
+    "icon": {
+      "main": {
+        "value": "{colour.icon.darkest}",
+        "type": "color"
+      }
+    },
+    "surface": {
+      "bg": {
+        "value": "{colour.surface.bg.light}",
+        "type": "color"
+      },
+      "accent": {
+        "value": "{colour.surface.accent.red}",
+        "type": "color"
+      },
+      "table": {
+        "cell": {
+          "light": {
+            "value": "{colour.surface.table.cell.white}",
+            "type": "color"
+          },
+          "colour": {
+            "value": "{colour.surface.table.cell.grey.default}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{colour.surface.table.cell.grey.hover}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "button": {
+      "primary": {
+        "surface": {
+          "default": {
+            "value": "{colour.button.surface.cyan.default}",
+            "type": "color"
+          },
+          "hover": {
+            "value": "{colour.button.surface.cyan.hover}",
+            "type": "color"
+          }
+        }
+      },
+      "text": {
+        "button": {
+          "primary": {
+            "value": "{colour.button.text.light}",
+            "type": "color"
+          },
+          "secondary": {
+            "value": "{colour.button.text.cyan}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}
