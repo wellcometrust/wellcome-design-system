@@ -1,5 +1,10 @@
 /src
-build.js
+/utils
+/tmp
+build-styles.js
+build-react-svgs.js
+fetch-svgs.js
 config.js
 package-lock.json
 tokens.json
+.env

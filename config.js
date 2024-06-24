@@ -1,5 +1,5 @@
 export default {
-  source: ['./src/*.json'],
+  source: ['./tmp/*.json'],
   preprocessors: ['tokens-studio'],
   platforms: {
     json: {
