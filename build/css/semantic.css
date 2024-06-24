@@ -1,0 +1,98 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:host {
+  --font-heading-desktop-brand-h0: 700 40px/1.5 Wellcome; /* To be used for heroes */
+  --font-heading-desktop-brand-h1: 700 32px/1.5 Wellcome;
+  --font-heading-desktop-brand-h2: 700 24px/1.5 Wellcome;
+  --font-heading-desktop-brand-h3: 700 20px/1.5 Wellcome;
+  --font-heading-desktop-brand-h4: 700 16px/1.5 Wellcome;
+  --font-heading-desktop-brand-h5: 700 14px/1.5 Wellcome;
+  --font-heading-desktop-sans-serif-h0: 500 40px/1.5 'Helvetica Neue';
+  --font-heading-desktop-sans-serif-h1: 500 32px/1.5 'Helvetica Neue';
+  --font-heading-desktop-sans-serif-h2: 500 24px/1.5 'Helvetica Neue';
+  --font-heading-desktop-sans-serif-h3: 500 20px/1.5 'Helvetica Neue';
+  --font-heading-desktop-sans-serif-h4: 500 16px/1.5 'Helvetica Neue';
+  --font-heading-desktop-sans-serif-h5: 500 14px/1.5 'Helvetica Neue';
+  --font-heading-tablet-brand-h0: 700 34px/1.5 Wellcome; /* To be used for heroes */
+  --font-heading-tablet-brand-h1: 700 28px/1.5 Wellcome;
+  --font-heading-tablet-brand-h2: 700 22px/1.5 Wellcome;
+  --font-heading-tablet-brand-h3: 700 18px/1.5 Wellcome;
+  --font-heading-tablet-brand-h4: 700 16px/1.5 Wellcome;
+  --font-heading-tablet-brand-h5: 700 14px/22 Wellcome;
+  --font-heading-tablet-sans-serif-h0: 500 34px/1.5 'Helvetica Neue';
+  --font-heading-tablet-sans-serif-h1: 500 28px/1.5 'Helvetica Neue';
+  --font-heading-tablet-sans-serif-h2: 500 22px/1.5 'Helvetica Neue';
+  --font-heading-tablet-sans-serif-h3: 500 18px/1.5 'Helvetica Neue';
+  --font-heading-tablet-sans-serif-h4: 500 16px/1.5 'Helvetica Neue';
+  --font-heading-tablet-sans-serif-h5: 500 14px/1.5 'Helvetica Neue';
+  --font-heading-mobile-brand-h0: 700 32px/1.5 Wellcome; /* To be used for heroes */
+  --font-heading-mobile-brand-h1: 700 24px/1.5 Wellcome;
+  --font-heading-mobile-brand-h2: 700 22px/1.5 Wellcome;
+  --font-heading-mobile-brand-h3: 700 18px/1.5 Wellcome;
+  --font-heading-mobile-brand-h4: 700 16px/1.5 Wellcome;
+  --font-heading-mobile-brand-h5: 700 14px/1.5 Wellcome;
+  --font-heading-mobile-sans-serif-h0: 500 32px/1.5 'Helvetica Neue';
+  --font-heading-mobile-sans-serif-h1: 500 24px/42 'Helvetica Neue';
+  --font-heading-mobile-sans-serif-h2: 500 22px/1.5 'Helvetica Neue';
+  --font-heading-mobile-sans-serif-h3: 500 18px/1.5 'Helvetica Neue';
+  --font-heading-mobile-sans-serif-h4: 500 16px/1.5 'Helvetica Neue';
+  --font-heading-mobile-sans-serif-h5: 500 14px/1.5 'Helvetica Neue';
+  --font-body-xl: 400 24px/1.5 'Helvetica Neue';
+  --font-body-l: 400 20px/1.5 'Helvetica Neue';
+  --font-body-m: 400 16px/24 'Helvetica Neue';
+  --font-body-s: 400 14px/1.5 'Helvetica Neue';
+  --font-body-xs: 400 12px/1.5 'Helvetica Neue';
+  --font-link: 400 16px/24 'Helvetica Neue';
+  --font-table-header: 500 10px/24 'Helvetica Neue';
+  --space-desktop-xxl: 96px;
+  --space-desktop-xl: 64px;
+  --space-desktop-l: 48px;
+  --space-desktop-m: 32px;
+  --space-desktop-s: 16px;
+  --space-desktop-xs: 8px;
+  --space-desktop-xxs: 4px;
+  --space-tablet-xxl: 72px;
+  --space-tablet-xl: 48px;
+  --space-tablet-l: 32px;
+  --space-tablet-m: 24px;
+  --space-tablet-s: 16px;
+  --space-tablet-xs: 8px;
+  --space-tablet-xxs: 4px;
+  --space-mobile-xxl: 48px;
+  --space-mobile-xl: 32px;
+  --space-mobile-l: 24px;
+  --space-mobile-m: 16px;
+  --space-mobile-s: 12px;
+  --space-mobile-xs: 8px;
+  --space-mobile-xxs: 4px;
+  --colour-text-darkest: #292929;
+  --colour-text-dark: #767676;
+  --colour-text-error: #e10f2d;
+  --colour-text-lighter: #f2f2f2;
+  --colour-text-lightest: #ffffff;
+  --colour-text-success: #4c8026;
+  --colour-text-light: #cccccc;
+  --colour-surface-table-cell-white: #ffffff;
+  --colour-surface-table-cell-grey-default: #f2f2f2;
+  --colour-surface-table-cell-grey-hover: #e6e6e6;
+  --colour-surface-table-cell-cyan-default: #f1fcfd;
+  --colour-surface-table-cell-cyan-hover: #dcf4f9;
+  --colour-surface-bg-dark: #002e45;
+  --colour-surface-bg-light: #ffffff;
+  --colour-surface-accent-amber: #fec200;
+  --colour-surface-accent-red: #e72343;
+  --colour-icon-darkest: #292929;
+  --colour-icon-lightest: #ffffff;
+  --colour-button-surface-amber-default: #fec200;
+  --colour-button-surface-amber-hover: #ffe699;
+  --colour-button-surface-amber-hover-alternate: #e7ae04;
+  --colour-button-surface-blue-default: #004099;
+  --colour-button-surface-blue-hover: #003170;
+  --colour-button-surface-cyan-default: #006272;
+  --colour-button-surface-cyan-hover: #005361;
+  --colour-button-text-light: #ffffff;
+  --colour-button-text-dark: #292929;
+  --colour-button-text-cyan: #006272;
+}

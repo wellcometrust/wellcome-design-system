@@ -9,7 +9,9 @@
     "url": "git+https://github.com/wellcometrust/wellcome-design-system.git"
   },
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "split-json": "node split-json.js",
+    "update-metadata": "node update-metadata.js"
   },
   "author": "",
   "license": "MIT",

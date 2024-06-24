@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": "Dot org",
+    "selectedTokenSets": {
+      "core": "source",
+      "semantic": "source",
+      "dot-org": "enabled"
+    },
+    "group": "brand"
+  },
+  {
+    "id": "2",
+    "name": "Funding",
+    "selectedTokenSets": {
+      "core": "source",
+      "semantic": "source",
+      "funding": "enabled"
+    },
+    "group": "brand"
+  },
+  {
+    "id": "3",
+    "name": "Funding search",
+    "selectedTokenSets": {
+      "core": "source",
+      "semantic": "source",
+      "funding-search": "enabled"
+    },
+    "group": "brand"
+  },
+  {
+    "id": "4",
+    "name": "I&DF",
+    "selectedTokenSets": {
+      "core": "source",
+      "semantic": "source",
+      "insights-and-data-finder": "enabled"
+    },
+    "group": "brand"
+  },
+  {
+    "id": "5",
+    "name": "Trustnet",
+    "selectedTokenSets": {
+      "core": "source",
+      "semantic": "source",
+      "trustnet": "enabled"
+    },
+    "group": "brand"
+  }
+]
