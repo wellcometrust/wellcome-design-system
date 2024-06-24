@@ -1,77 +1,29 @@
 import { promises } from "node:fs";
 
 import StyleDictionary from 'style-dictionary';
-import { getReferences, usesReferences } from "style-dictionary/utils";
 import { permutateThemes, registerTransforms } from '@tokens-studio/sd-transforms';
 
-const components = ["collection-core", "collection-theme"];
+import { generateSemanticFiles } from "./src/generateSemanticFiles.js";
 
-// filters only tokens originating from core.json
-export const coreFilter = (token) => token.filePath.endsWith("core.json") && !token.filePath.includes("collection");
+import { transformAttributeThemeable } from "./src/transforms/transformAttributeThemeable.js";
+import { transformRem } from "./src/transforms/transformRem.js";
 
-export const collectionFilter = (token) => token.filePath.includes("collection");
-
-// filters only tokens originating from semantic sets (not core, not components) and also check themeable or not
-export const semanticFilter =
-    (components, themeable = false) =>
-        (token) => {
-          const tokenThemable = Boolean(token.attributes.themeable);
-          return (
-              themeable === tokenThemable &&
-              ["core", ...components].every(
-                  (cat) => !token.filePath.endsWith(`${cat}.json`)
-              )
-          );
-        };
-
-const commonFileOptions = {
-  format: "css/variables",
-  options: {
-    selector: ":host",
-  },
-};
-
-export const generateSemanticFiles = (components, theme) => {
-  const filesArr = [];
-  // theme-specific outputs
-  filesArr.push({
-    ...commonFileOptions,
-    filter: semanticFilter(components, true),
-    destination: `product/${theme.toLowerCase().replace(' ', '-')}.css`,
-  });
-
-  // not theme-specific outputs
-  filesArr.push({
-    ...commonFileOptions,
-    filter: semanticFilter(components, false),
-    destination: `semantic.css`,
-  });
-
-  return filesArr;
-};
+const excludedFromSemantic = ["collection-core", "collection-theme"];
 
 // Define the array of excluded token paths
 const excludedPaths = [
-  'tokenSetOrder',
   'asset',
   'annotations'
 ];
 
 registerTransforms(StyleDictionary);
 
-StyleDictionary.registerFilter({
-  name: 'custom/excludeTokens',
-  filter: (prop) => {
-    return !prop.path.some(part => excludedPaths.includes(part));
-  }
-});
-
 async function run() {
   const $themes = JSON.parse(await promises.readFile("tokens/$themes.json"));
 
   const themes = permutateThemes($themes);
 
-  // collect all tokensets for all themes and dedupe
+  // collect all tokensets for all themes
   const tokensets = [
     ...new Set(
         Object.values(themes).reduce((acc, sets) => [...acc, ...sets], [])
@@ -91,27 +43,20 @@ async function run() {
       platforms: {
         css: {
           transformGroup: 'tokens-studio',
-          transforms: ["attribute/themeable", "name/kebab"],
+          transforms: ["attribute/themeable", "name/kebab", "custom/rem"],
           buildPath: 'build/css/',
           files: [
             {
               destination: "core.css",
               format: "css/variables",
-              filter: coreFilter,
+              filter: 'custom/coreFilter',
             },
-            //   collection
             {
               destination: "product/collection.css",
               format: "css/variables",
-              filter: collectionFilter,
+              filter: 'custom/collectionFilter',
             },
-            // {
-            //   destination: `${theme}.css`,
-            //   format: 'css/variables',
-            //   filter: 'custom/excludeTokens'
-            // }
-            // semantic tokens, e.g. for application developer
-            ...generateSemanticFiles(components, theme),
+            ...generateSemanticFiles(excludedFromSemantic, theme),
           ]
         }
       }
@@ -122,48 +67,35 @@ async function run() {
   for (const cfg of configs) {
     const sd = new StyleDictionary(cfg);
 
-    /**
-     * This transform checks for each token whether that token's value could change
-     * due to Tokens Studio theming.
-     * Any tokenset from Tokens Studio marked as "enabled" in the $themes.json is considered
-     * a set in which any token could change if the theme changes.
-     * Any token that is inside such a set or is a reference with a token in that reference chain
-     * that is inside such a set, is considered "themeable",
-     * which means it could change by theme switching.
-     *
-     * This metadata is applied to the token so we can use it as a way of filtering outputs
-     * later in the "format" stage.
-     */
     sd.registerTransform({
       name: "attribute/themeable",
       type: "attribute",
-      transform: (token) => {
-        function isPartOfEnabledSet(token) {
-          const set = token.filePath
-              .replace(/^tokens\//g, "")
-              .replace(/.json$/g, "");
+      transform: (token) => transformAttributeThemeable(token, themeableSets, sd.tokens),
+    });
 
-          return themeableSets.includes(set);
-        }
+    sd.registerTransform({
+      name: 'custom/rem',
+      type: 'value',
+      transitive: true,
+      filter: token =>
+          ['sizing', 'spacing', 'borderRadius', 'fontSizes', 'lineHeights', 'letterSpacing'].includes(
+              token.type,
+          ),
+      transform: token => transformRem(token.value),
+    });
 
-        // Set token to themeable if it's part of an enabled set
-        if (isPartOfEnabledSet(token)) {
-          return {
-            themeable: true,
-          };
-        }
+    sd.registerFilter({
+      name: 'custom/coreFilter',
+      filter: (token) => {
+        return token.filePath.endsWith("core.json") && !token.filePath.includes("collection") && !token.path.some(part => excludedPaths.includes(part))
+      }
+    });
 
-        // Set token to themeable if it's using a reference and inside the reference chain
-        // any one of them is from a themeable set
-        if (usesReferences(token.original.value)) {
-          const refs = getReferences(token.original.value, sd.tokens);
-          if (refs.some((ref) => isPartOfEnabledSet(ref))) {
-            return {
-              themeable: true,
-            };
-          }
-        }
-      },
+    sd.registerFilter({
+      name: 'custom/collectionFilter',
+      filter: (token) => {
+        return token.filePath.includes("collection")
+      }
     });
 
     await sd.cleanAllPlatforms();
