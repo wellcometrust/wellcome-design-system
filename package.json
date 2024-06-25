@@ -20,5 +20,8 @@
   "devDependencies": {
     "@tokens-studio/sd-transforms": "^0.16.1",
     "style-dictionary": "^4.0.0-prerelease.27"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.27.6"
   }
 }
