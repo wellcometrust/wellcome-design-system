@@ -3,20 +3,20 @@
  */
 
 :host {
-  --color-text-body-main: #292929;
-  --color-text-body-hint: #767676;
-  --color-text-body-error: #e10f2d;
-  --color-text-body-standfirst: #292929;
-  --color-text-heading-main: #292929;
-  --color-text-heading-alternate: #292929;
-  --color-icon-main: #292929;
-  --color-surface-bg: #ffffff;
-  --color-surface-accent: #e72343;
-  --color-surface-table-cell-light: #ffffff;
-  --color-surface-table-cell-colour: #f2f2f2;
-  --color-surface-table-cell-hover: #e6e6e6;
-  --color-button-primary-surface-default: #006272;
-  --color-button-primary-surface-hover: #005361;
-  --color-button-text-button-primary: #ffffff;
-  --color-button-text-button-secondary: #006272;
+  --wds-color-text-body-main: #292929;
+  --wds-color-text-body-hint: #767676;
+  --wds-color-text-body-error: #e10f2d;
+  --wds-color-text-body-standfirst: #292929;
+  --wds-color-text-heading-main: #292929;
+  --wds-color-text-heading-alternate: #292929;
+  --wds-color-icon-main: #292929;
+  --wds-color-surface-bg: #ffffff;
+  --wds-color-surface-accent: #e72343;
+  --wds-color-surface-table-cell-light: #ffffff;
+  --wds-color-surface-table-cell-colour: #f2f2f2;
+  --wds-color-surface-table-cell-hover: #e6e6e6;
+  --wds-color-button-primary-surface-default: #006272;
+  --wds-color-button-primary-surface-hover: #005361;
+  --wds-color-button-text-button-primary: #ffffff;
+  --wds-color-button-text-button-secondary: #006272;
 }

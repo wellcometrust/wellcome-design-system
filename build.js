@@ -47,6 +47,7 @@ async function run() {
           transformGroup: 'tokens-studio',
           transforms: ["custom/attribute/themeable", "name/kebab", "custom/rem", "custom/font"],
           buildPath: 'generatedTokens/css/',
+          prefix: "wds",
           files: [
             {
               destination: "core.css",
