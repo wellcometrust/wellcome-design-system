@@ -5,10 +5,12 @@ import { permutateThemes, registerTransforms } from '@tokens-studio/sd-transform
 
 import { generateSemanticFiles } from "./utils/generateSemanticFiles.js";
 
+import { formatFontFace } from "./utils/formats/formatFontFace.js";
 import { transformAttributeThemeable } from "./utils/transforms/transformAttributeThemeable.js";
 import { transformRem } from "./utils/transforms/transformRem.js";
+import { transformFont } from "./utils/transforms/transformFont.js";
 
-const excludedFromSemantic = ["collection-core", "collection-theme"];
+const excludedFromSemantic = ["collection-core", "collection-theme", "fonts"];
 
 // Define the array of excluded token paths
 const excludedPaths = [
@@ -43,7 +45,7 @@ async function run() {
       platforms: {
         css: {
           transformGroup: 'tokens-studio',
-          transforms: ["custom/attribute/themeable", "name/kebab", "custom/rem"],
+          transforms: ["custom/attribute/themeable", "name/kebab", "custom/rem", "custom/font"],
           buildPath: 'generatedTokens/css/',
           files: [
             {
@@ -56,6 +58,19 @@ async function run() {
               format: "css/variables",
               filter: 'custom/collectionFilter',
             },
+            {
+              destination: "fonts.css",
+              format: "custom/font-face",
+              filter: {
+                attributes: {
+                  category: "asset",
+                  type: "font"
+                }
+              },
+              options: {
+                fontPathPrefix: "../../assets/"
+              }
+            },
             ...generateSemanticFiles(excludedFromSemantic, theme),
           ]
         }
@@ -67,10 +82,23 @@ async function run() {
   for (const cfg of configs) {
     const sd = new StyleDictionary(cfg);
 
+    sd.registerFormat({
+      name: 'custom/font-face',
+      format: ({ dictionary: { allTokens }, options }) => formatFontFace(allTokens, options)
+
+    });
+
     sd.registerTransform({
       name: "custom/attribute/themeable",
       type: "attribute",
       transform: (token) => transformAttributeThemeable(token, themeableSets, sd.tokens),
+    });
+
+    sd.registerTransform({
+      name: 'custom/font',
+      type: 'attribute',
+      filter: token =>  token.path[0] === 'asset' && token.path[1] === 'font',
+      transform: token => transformFont(token.path)
     });
 
     sd.registerTransform({
