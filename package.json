@@ -4,6 +4,10 @@
   "description": "Design system for Wellcome and Wellcome Collection products",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.6.7"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wellcometrust/wellcome-design-system.git"

@@ -43,7 +43,7 @@ async function run() {
       platforms: {
         css: {
           transformGroup: 'tokens-studio',
-          transforms: ["attribute/themeable", "name/kebab", "custom/rem"],
+          transforms: ["custom/attribute/themeable", "name/kebab", "custom/rem"],
           buildPath: 'generatedTokens/css/',
           files: [
             {
@@ -68,7 +68,7 @@ async function run() {
     const sd = new StyleDictionary(cfg);
 
     sd.registerTransform({
-      name: "attribute/themeable",
+      name: "custom/attribute/themeable",
       type: "attribute",
       transform: (token) => transformAttributeThemeable(token, themeableSets, sd.tokens),
     });
