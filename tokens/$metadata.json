@@ -1,16 +1,16 @@
 {
   "tokenSetOrder": [
-    "core",
-    "semantic",
-    "dot-org",
-    "funding",
-    "funding-search",
-    "insights-and-data-finder",
-    "trustnet",
-    "collection-core",
-    "collection-theme",
-    "desktop",
-    "tablet",
-    "mobile"
+    "GLOBAL/core",
+    "GLOBAL/semantic",
+    "PRODUCTS/dot org",
+    "PRODUCTS/funding",
+    "PRODUCTS/funding search",
+    "PRODUCTS/insights and data finder",
+    "PRODUCTS/trustnet",
+    "PRODUCTS/COLLECTION/core",
+    "PRODUCTS/COLLECTION/theme",
+    "BREAKPOINTS/desktop",
+    "BREAKPOINTS/tablet",
+    "BREAKPOINTS/mobile"
   ]
 }

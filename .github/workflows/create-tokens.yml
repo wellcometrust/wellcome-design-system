@@ -22,9 +22,6 @@ jobs:
       - name: Split tokens.json file
         run: npm run split-json
 
-      - name: Update $metadata.json file
-        run: npm run update-metadata
-
       # Convert tokens according to Style Dictionary config
       - name: Run style-dictionary
         run: npm run build
