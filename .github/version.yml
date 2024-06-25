@@ -1,0 +1,55 @@
+name: Create new version
+
+on:
+  push:
+    branches:
+      - token-studio
+
+jobs:
+  create-changeset:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js 20.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+      
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Create the changeset
+        run: python ./scripts/create-changeset.py
+
+      - name: Apply the changeset
+        run: npx changeset version
+
+      - name: check for changes
+        run: git status
+
+      - name: stage changed files
+        run: git add --all
+
+      - name: commit changed files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Creates changeset"
+
+      - name: push changes
+        run: git push
+
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        
+      - name: Create Pull Request
+        uses: repo-sync/pull-request@v2
+        with:
+          destination_branch: 'main'
+          pr_title: 'Figma Tokens Update'
+          pr_body: '🍥 Design Tokens were updated in Figma! This PR was created to update the code.'
