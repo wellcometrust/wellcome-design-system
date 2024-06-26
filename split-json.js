@@ -15,7 +15,8 @@ const jsonData = JSON.parse(rawData);
 const baseDir = path.join(__dirname, 'tokens');
 
 // Define keys to exclude
-const excludeKeys = ['$themes'];
+// We don't need these tokens in the design system
+const excludeKeys = ['$themes', 'BREAKPOINTS/desktop', 'BREAKPOINTS/tablet', 'BREAKPOINTS/mobile'];
 
 // Function to write data to file
 const writeFile = (filePath, data) => {
