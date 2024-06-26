@@ -1,8 +1,11 @@
 import fs from 'node:fs';
+import { createRequire } from 'node:module';
 import { registerTransforms } from '@tokens-studio/sd-transforms';
 import StyleDictionary from 'style-dictionary';
-import tokens from './tokens.json' assert { type: "json" };
 import config from './config.js';
+
+const require = createRequire(import.meta.url);
+const tokens = require('./tokens.json');
 
 function slugify(str) {
   return str
