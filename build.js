@@ -6,6 +6,7 @@ import { permutateThemes, registerTransforms } from '@tokens-studio/sd-transform
 import { generateSemanticFiles } from "./utils/generateSemanticFiles.js";
 
 import { formatFontFace } from "./utils/formats/formatFontFace.js";
+import { foramtResponsiveCss } from "./utils/formats/formatResponsiveCss.js";
 import { transformAttributeThemeable } from "./utils/transforms/transformAttributeThemeable.js";
 import { transformRem } from "./utils/transforms/transformRem.js";
 import { transformFont } from "./utils/transforms/transformFont.js";
@@ -72,6 +73,11 @@ async function run() {
                 fontPathPrefix: "../../assets/"
               }
             },
+            {
+              destination: "responsive.css",
+              format: "custom/css/responsive",
+              filter: "custom/excludeTokens"
+            },
             ...generateSemanticFiles(excludedFromSemantic, theme),
           ]
         }
@@ -87,6 +93,11 @@ async function run() {
       name: 'custom/font-face',
       format: ({ dictionary: { allTokens }, options }) => formatFontFace(allTokens, options)
 
+    });
+
+    sd.registerFormat({
+      name: 'custom/css/responsive',
+      format: ({ dictionary }) => foramtResponsiveCss(dictionary)
     });
 
     sd.registerTransform({
@@ -123,7 +134,15 @@ async function run() {
     sd.registerFilter({
       name: 'custom/collectionFilter',
       filter: (token) => {
+        console.log("token", token);
         return token.filePath.includes("collection")
+      }
+    });
+
+    sd.registerFilter({
+      name: 'custom/excludeTokens',
+      filter: (prop) => {
+        return !prop.path.some(part => excludedPaths.includes(part));
       }
     });
 
