@@ -1,4 +1,4 @@
-export const foramtResponsiveCss = (dictionary) => {
+export const formatResponsiveCSS = (dictionary) => {
     const deviceTokenName = "artboard";
     const excludeTokens = [deviceTokenName];
 

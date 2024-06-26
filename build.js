@@ -6,7 +6,7 @@ import { permutateThemes, registerTransforms } from '@tokens-studio/sd-transform
 import { generateSemanticFiles } from "./utils/generateSemanticFiles.js";
 
 import { formatFontFace } from "./utils/formats/formatFontFace.js";
-import { foramtResponsiveCss } from "./utils/formats/formatResponsiveCss.js";
+import { formatResponsiveCSS } from "./utils/formats/formatResponsiveCSS.js";
 import { transformAttributeThemeable } from "./utils/transforms/transformAttributeThemeable.js";
 import { transformRem } from "./utils/transforms/transformRem.js";
 import { transformFont } from "./utils/transforms/transformFont.js";
@@ -97,7 +97,7 @@ async function run() {
 
     sd.registerFormat({
       name: 'custom/css/responsive',
-      format: ({ dictionary }) => foramtResponsiveCss(dictionary)
+      format: ({ dictionary }) => formatResponsiveCSS(dictionary)
     });
 
     sd.registerTransform({
@@ -134,7 +134,6 @@ async function run() {
     sd.registerFilter({
       name: 'custom/collectionFilter',
       filter: (token) => {
-        console.log("token", token);
         return token.filePath.includes("collection")
       }
     });
