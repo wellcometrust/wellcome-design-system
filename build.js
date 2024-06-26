@@ -118,7 +118,7 @@ async function run() {
       type: 'value',
       transitive: true,
       filter: token =>
-          ['sizing', 'spacing', 'borderRadius', 'fontSizes', 'lineHeights', 'letterSpacing'].includes(
+          ['sizing', 'spacing', 'borderRadius', 'fontSizes', 'letterSpacing'].includes(
               token.type,
           ),
       transform: token => transformRem(token.value),
