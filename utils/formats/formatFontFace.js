@@ -4,7 +4,7 @@
  * @param options
  * @returns {*}
  *
- * @see @see {@link https://github.com/amzn/style-dictionary/blob/main/examples/advanced/font-face-rules/sd.config.js#L18}
+ * @see {@link https://github.com/amzn/style-dictionary/blob/main/examples/advanced/font-face-rules/sd.config.js#L18}
  */
 export const formatFontFace = (allTokens, options) => {
     const fontPathPrefix = options.fontPathPrefix || '../';
@@ -13,10 +13,6 @@ export const formatFontFace = (allTokens, options) => {
     const formatsMap = {
         'woff2': 'woff2',
         'woff': 'woff',
-        'ttf': 'truetype',
-        'otf': 'opentype',
-        'svg': 'svg',
-        'eot': 'embedded-opentype'
     };
 
     return allTokens.reduce((fontList, prop) => {
