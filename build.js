@@ -9,13 +9,13 @@ registerTransforms(StyleDictionary);
 const tokenGroups = ["core", "semantic", "collection-core"];
 
 const common = {
-  buildPath: "generatedTokens/",
+  buildPath: "tokens-generated/",
   prefix: "wds",
   transformGroup: "tokens-studio",
 };
 
 const sd = new StyleDictionary({
-  source: ["tokens/*.json"],
+  source: ["tokens-figma/*.json"],
   platforms: {
     css: {
       ...common,
@@ -25,7 +25,7 @@ const sd = new StyleDictionary({
           destination: `css/${groupName}.css`,
           format: "css/variables",
           filter: (token) =>
-            token.filePath === `tokens/${groupName}.json` &&
+            token.filePath === `tokens-figma/${groupName}.json` &&
             filterExcludeTokens(token),
         };
       }),
@@ -58,4 +58,5 @@ sd.registerTransform({
   transform: (token) => transformToRem(token.value),
 });
 
+sd.cleanAllPlatforms();
 sd.buildAllPlatforms();
