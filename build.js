@@ -2,7 +2,7 @@ import StyleDictionary from "style-dictionary";
 import { registerTransforms } from "@tokens-studio/sd-transforms";
 
 import filterExcludeTokens from "./utils/filters/filterExcludeTokens.js";
-import transformToRem from "./utils/transforms/transformtoRem.js";
+import transformToRem from "./utils/transforms/transformToRem.js";
 
 registerTransforms(StyleDictionary);
 
