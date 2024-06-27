@@ -8,7 +8,7 @@ function getBasePxFontSize(options) {
   return options?.basePxFontSize || 16;
 }
 
-export function transformRem(tokenValue, options) {
+function transformToRem(tokenValue, options) {
   if (tokenValue === undefined) {
     return tokenValue;
   }
@@ -27,3 +27,5 @@ export function transformRem(tokenValue, options) {
 
   return `${value / baseFont}rem`;
 }
+
+export default transformToRem;
