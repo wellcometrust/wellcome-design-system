@@ -6,7 +6,7 @@ import transformToRem from "./utils/transforms/transformToRem.js";
 
 registerTransforms(StyleDictionary);
 
-const tokenGroups = ["core", "semantic", "collection-core"];
+const tokenGroups = ["core", "semantic"];
 
 const common = {
   buildPath: "tokens-generated/",

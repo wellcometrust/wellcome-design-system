@@ -15,11 +15,7 @@ const jsonData = JSON.parse(rawData);
 const baseDir = path.join(__dirname, "tokens-figma");
 
 // Define keys to include
-const includeKeys = [
-  "GLOBAL/core",
-  "GLOBAL/semantic",
-  "PRODUCTS/COLLECTION/core",
-];
+const includeKeys = ["GLOBAL/core", "GLOBAL/semantic"];
 
 // Function to write data to file
 const writeFile = (filePath, data) => {
