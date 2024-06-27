@@ -1,6 +1,6 @@
 export default {
-  source: ['./src/*.json'],
-  preprocessors: ['tokens-studio'],
+  source: ["./src/*.json"],
+  preprocessors: ["tokens-studio"],
   platforms: {
     json: {
       buildPath: "dist/json/",
@@ -8,9 +8,9 @@ export default {
       files: [
         {
           destination: "variables.json",
-          format: "json/nested"
-        }
-      ]
-    }
-  }
+          format: "json/nested",
+        },
+      ],
+    },
+  },
 };

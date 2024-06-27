@@ -9,7 +9,8 @@
     "url": "git+https://github.com/wellcometrust/wellcome-design-system.git"
   },
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "lint": "eslint"
   },
   "author": "",
   "license": "MIT",
@@ -18,7 +19,12 @@
   },
   "homepage": "https://www.figma.com/design/6bg5Y3Y4gLXgSdVa8Da8Vy/Wellcome-design-system?node-id=316-9&t=c6cHC23OsadCwIg3-0",
   "devDependencies": {
+    "@eslint/js": "^9.5.0",
     "@tokens-studio/sd-transforms": "^0.16.1",
+    "eslint": "^9.5.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "globals": "^15.6.0",
+    "prettier": "^3.3.2",
     "style-dictionary": "^4.0.0-prerelease.27"
   },
   "dependencies": {
