@@ -1,37 +1,61 @@
-import fs from "node:fs";
-import { createRequire } from "node:module";
-import { registerTransforms } from "@tokens-studio/sd-transforms";
 import StyleDictionary from "style-dictionary";
-import config from "./config.js";
+import { registerTransforms } from "@tokens-studio/sd-transforms";
 
-const require = createRequire(import.meta.url);
-const tokens = require("./tokens.json");
-
-function slugify(str) {
-  return str
-    .replace(/^\s+|\s+$/g, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9 -]/g, "")
-    .replace(/\s+/g, "-")
-    .replace(/-+/g, "-");
-}
-
-// Split the tokens.json (from Tokens Studio) into its top-level keys -- useful
-// if we want to e.g. prefix variables by their type
-Object.entries(tokens).map(([key, value]) => {
-  if (key.startsWith("$")) return; // Tokens Studio meta info, not required for variables
-
-  try {
-    fs.writeFileSync(`./src/${slugify(key)}.json`, JSON.stringify(value), {
-      flag: "w",
-    });
-  } catch (err) {
-    console.log(err);
-  }
-});
+import filterExcludeTokens from "./utils/filters/filterExcludeTokens.js";
+import transformToRem from "./utils/transforms/transformToRem.js";
 
 registerTransforms(StyleDictionary);
-const sd = new StyleDictionary(config);
 
-sd.cleanAllPlatforms();
+const tokenGroups = ["core", "semantic", "collection-core"];
+
+const common = {
+  buildPath: "generatedTokens/",
+  prefix: "wds",
+  transformGroup: "tokens-studio",
+};
+
+const sd = new StyleDictionary({
+  source: ["tokens/*.json"],
+  platforms: {
+    css: {
+      ...common,
+      transforms: ["name/kebab", "custom/rem"],
+      files: tokenGroups.map((groupName) => {
+        return {
+          destination: `css/${groupName}.css`,
+          format: "css/variables",
+          filter: (token) =>
+            token.filePath === `tokens/${groupName}.json` &&
+            filterExcludeTokens(token),
+        };
+      }),
+    },
+    json: {
+      ...common,
+      files: [
+        {
+          destination: "wds-tokens.json",
+          format: "json/nested",
+          filter: (token) => filterExcludeTokens(token),
+        },
+      ],
+    },
+  },
+});
+
+sd.registerTransform({
+  name: "custom/rem",
+  type: "value",
+  transitive: true,
+  filter: (token) =>
+    [
+      "sizing",
+      "spacing",
+      "borderRadius",
+      "fontSizes",
+      "letterSpacing",
+    ].includes(token.type),
+  transform: (token) => transformToRem(token.value),
+});
+
 sd.buildAllPlatforms();
