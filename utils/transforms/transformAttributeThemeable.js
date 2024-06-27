@@ -14,29 +14,27 @@ import { getReferences, usesReferences } from "style-dictionary/utils";
  */
 
 export const transformAttributeThemeable = (token, themeableSets, sdTokens) => {
-    function isPartOfEnabledSet(token) {
-        const set = token.filePath
-            .replace(/^tokens\//g, "")
-            .replace(/.json$/g, "");
+  function isPartOfEnabledSet(token) {
+    const set = token.filePath.replace(/^tokens\//g, "").replace(/.json$/g, "");
 
-        return themeableSets.includes(set);
-    }
+    return themeableSets.includes(set);
+  }
 
-    // Set token to themeable if it's part of an enabled set
-    if (isPartOfEnabledSet(token)) {
-        return {
-            themeable: true,
-        };
-    }
+  // Set token to themeable if it's part of an enabled set
+  if (isPartOfEnabledSet(token)) {
+    return {
+      themeable: true,
+    };
+  }
 
-    // Set token to themeable if it's using a reference and inside the reference chain
-    // any one of them is from a themeable set
-    if (usesReferences(token.original.value)) {
-        const refs = getReferences(token.original.value, sdTokens);
-        if (refs.some((ref) => isPartOfEnabledSet(ref))) {
-            return {
-                themeable: true,
-            };
-        }
+  // Set token to themeable if it's using a reference and inside the reference chain
+  // any one of them is from a themeable set
+  if (usesReferences(token.original.value)) {
+    const refs = getReferences(token.original.value, sdTokens);
+    if (refs.some((ref) => isPartOfEnabledSet(ref))) {
+      return {
+        themeable: true,
+      };
     }
-}
+  }
+};

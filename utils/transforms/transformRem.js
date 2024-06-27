@@ -5,25 +5,25 @@
  */
 
 function getBasePxFontSize(options) {
-    return options?.basePxFontSize || 16;
+  return options?.basePxFontSize || 16;
 }
 
 export function transformRem(tokenValue, options) {
-    if (tokenValue === undefined) {
-        return tokenValue;
-    }
+  if (tokenValue === undefined) {
+    return tokenValue;
+  }
 
-    if (`${tokenValue}`.endsWith('rem')) {
-        return `${tokenValue}`;
-    }
+  if (`${tokenValue}`.endsWith("rem")) {
+    return `${tokenValue}`;
+  }
 
-    const value = parseFloat(`${tokenValue}`);
+  const value = parseFloat(`${tokenValue}`);
 
-    if (value === 0) {
-        return '0';
-    }
+  if (value === 0) {
+    return "0";
+  }
 
-    const baseFont = getBasePxFontSize(options);
+  const baseFont = getBasePxFontSize(options);
 
-    return `${value / baseFont}rem`;
+  return `${value / baseFont}rem`;
 }
