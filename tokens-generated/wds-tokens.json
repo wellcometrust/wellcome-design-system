@@ -105,9 +105,9 @@
   },
   "font": {
     "family": {
-      "mono": "'Courier New'",
-      "brand": "Wellcome",
-      "sans-serif": "'Helvetica Neue'"
+      "mono": "'Courier New', Courier, monospace",
+      "brand": "Wellcome, sans-serif",
+      "sans-serif": "Inter, sans-serif"
     },
     "weight": {
       "400": "400",
@@ -155,68 +155,68 @@
     "heading": {
       "desktop": {
         "brand": {
-          "h0": "700 40px/1.5 Wellcome",
-          "h1": "700 32px/1.5 Wellcome",
-          "h2": "700 24px/1.5 Wellcome",
-          "h3": "700 20px/1.5 Wellcome",
-          "h4": "700 16px/1.5 Wellcome",
-          "h5": "700 14px/1.5 Wellcome"
+          "h0": "700 40px/1.5 Wellcome, sans-serif",
+          "h1": "700 32px/1.5 Wellcome, sans-serif",
+          "h2": "700 24px/1.5 Wellcome, sans-serif",
+          "h3": "700 20px/1.5 Wellcome, sans-serif",
+          "h4": "700 16px/1.5 Wellcome, sans-serif",
+          "h5": "700 14px/1.5 Wellcome, sans-serif"
         },
         "sans-serif": {
-          "h0": "500 40px/1.5 'Helvetica Neue'",
-          "h1": "500 32px/1.5 'Helvetica Neue'",
-          "h2": "500 24px/1.5 'Helvetica Neue'",
-          "h3": "500 20px/1.5 'Helvetica Neue'",
-          "h4": "500 16px/1.5 'Helvetica Neue'",
-          "h5": "500 14px/1.5 'Helvetica Neue'"
+          "h0": "500 40px/1.5 Inter, sans-serif",
+          "h1": "500 32px/1.5 Inter, sans-serif",
+          "h2": "500 24px/1.5 Inter, sans-serif",
+          "h3": "500 20px/1.5 Inter, sans-serif",
+          "h4": "500 16px/1.5 Inter, sans-serif",
+          "h5": "500 14px/1.5 Inter, sans-serif"
         }
       },
       "tablet": {
         "brand": {
-          "h0": "700 34px/1.5 Wellcome",
-          "h1": "700 28px/1.5 Wellcome",
-          "h2": "700 22px/1.5 Wellcome",
-          "h3": "700 18px/1.5 Wellcome",
-          "h4": "700 16px/1.5 Wellcome",
-          "h5": "700 14px/22 Wellcome"
+          "h0": "700 34px/1.5 Wellcome, sans-serif",
+          "h1": "700 28px/1.5 Wellcome, sans-serif",
+          "h2": "700 22px/1.5 Wellcome, sans-serif",
+          "h3": "700 18px/1.5 Wellcome, sans-serif",
+          "h4": "700 16px/1.5 Wellcome, sans-serif",
+          "h5": "700 14px/22 Wellcome, sans-serif"
         },
         "sans-serif": {
-          "h0": "500 34px/1.5 'Helvetica Neue'",
-          "h1": "500 28px/1.5 'Helvetica Neue'",
-          "h2": "500 22px/1.5 'Helvetica Neue'",
-          "h3": "500 18px/1.5 'Helvetica Neue'",
-          "h4": "500 16px/1.5 'Helvetica Neue'",
-          "h5": "500 14px/1.5 'Helvetica Neue'"
+          "h0": "500 34px/1.5 Inter, sans-serif",
+          "h1": "500 28px/1.5 Inter, sans-serif",
+          "h2": "500 22px/1.5 Inter, sans-serif",
+          "h3": "500 18px/1.5 Inter, sans-serif",
+          "h4": "500 16px/1.5 Inter, sans-serif",
+          "h5": "500 14px/1.5 Inter, sans-serif"
         }
       },
       "mobile": {
         "brand": {
-          "h0": "700 32px/1.5 Wellcome",
-          "h1": "700 24px/1.5 Wellcome",
-          "h2": "700 22px/1.5 Wellcome",
-          "h3": "700 18px/1.5 Wellcome",
-          "h4": "700 16px/1.5 Wellcome",
-          "h5": "700 14px/1.5 Wellcome"
+          "h0": "700 32px/1.5 Wellcome, sans-serif",
+          "h1": "700 24px/1.5 Wellcome, sans-serif",
+          "h2": "700 22px/1.5 Wellcome, sans-serif",
+          "h3": "700 18px/1.5 Wellcome, sans-serif",
+          "h4": "700 16px/1.5 Wellcome, sans-serif",
+          "h5": "700 14px/1.5 Wellcome, sans-serif"
         },
         "sans-serif": {
-          "h0": "500 32px/1.5 'Helvetica Neue'",
-          "h1": "500 24px/42 'Helvetica Neue'",
-          "h2": "500 22px/1.5 'Helvetica Neue'",
-          "h3": "500 18px/1.5 'Helvetica Neue'",
-          "h4": "500 16px/1.5 'Helvetica Neue'",
-          "h5": "500 14px/1.5 'Helvetica Neue'"
+          "h0": "500 32px/1.5 Inter, sans-serif",
+          "h1": "500 24px/42 Inter, sans-serif",
+          "h2": "500 22px/1.5 Inter, sans-serif",
+          "h3": "500 18px/1.5 Inter, sans-serif",
+          "h4": "500 16px/1.5 Inter, sans-serif",
+          "h5": "500 14px/1.5 Inter, sans-serif"
         }
       }
     },
     "body": {
-      "xl": "400 24px/1.5 'Helvetica Neue'",
-      "l": "400 20px/1.5 'Helvetica Neue'",
-      "m": "400 16px/24 'Helvetica Neue'",
-      "s": "400 14px/1.5 'Helvetica Neue'",
-      "xs": "400 12px/1.5 'Helvetica Neue'"
+      "xl": "400 24px/1.5 Inter, sans-serif",
+      "l": "400 20px/1.5 Inter, sans-serif",
+      "m": "400 16px/24 Inter, sans-serif",
+      "s": "400 14px/1.5 Inter, sans-serif",
+      "xs": "400 12px/1.5 Inter, sans-serif"
     },
-    "link": "400 16px/24 'Helvetica Neue'",
-    "tableHeader": "500 10px/24 'Helvetica Neue'"
+    "link": "400 16px/24 Inter, sans-serif",
+    "tableHeader": "500 10px/24 Inter, sans-serif"
   },
   "artboard": {
     "desktop": "1440px",

@@ -374,15 +374,15 @@
   "font": {
     "family": {
       "mono": {
-        "value": "Courier New",
+        "value": "Courier New, Courier, monospace",
         "type": "fontFamilies"
       },
       "brand": {
-        "value": "Wellcome",
+        "value": "Wellcome, sans-serif",
         "type": "fontFamilies"
       },
       "sans-serif": {
-        "value": "Helvetica Neue",
+        "value": "Inter, sans-serif",
         "type": "fontFamilies"
       }
     },
