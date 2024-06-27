@@ -34,7 +34,7 @@ const sd = new StyleDictionary({
       ...common,
       files: [
         {
-          destination: "wds-tokes.json",
+          destination: "wds-tokens.json",
           format: "json/nested",
           filter: (token) => filterExcludeTokens(token),
         },
