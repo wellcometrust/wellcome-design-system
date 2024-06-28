@@ -12,7 +12,7 @@ const rawData = fs.readFileSync(jsonFile);
 const jsonData = JSON.parse(rawData);
 
 // Define the base output directory
-const baseDir = path.join(__dirname, "tokens-figma");
+const baseDir = path.join(__dirname, "tokens/tokens-figma");
 
 // Define keys to include
 const includeKeys = ["GLOBAL/core", "GLOBAL/semantic"];

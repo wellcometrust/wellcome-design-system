@@ -1,0 +1,26 @@
+@font-face {
+	font-display: swap;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../../assets/fonts/Inter-Regular.woff2") format("woff2"),
+			 url("../../assets/fonts/Inter-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	src: url("../../assets/fonts/Inter-Medium.woff2") format("woff2"),
+			 url("../../assets/fonts/Inter-Medium.woff") format("woff");
+}
+
+@font-face {
+	font-display: swap;
+	font-family: "Wellcome";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../../assets/fonts/wellcome-bold-webfont.woff2") format("woff2"),
+			 url("../../assets/fonts/wellcome-bold-webfont.woff") format("woff");
+}
