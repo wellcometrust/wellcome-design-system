@@ -17,5 +17,5 @@ jobs:
         with:
           destination_branch: 'main'
           pr_title: 'Figma Tokens Update'
-          pr_body: '🍥 Design Tokens were updated in Figma! This PR was created to update the code.'
+          pr_body: '🍥 Design Tokens were updated in Figma!'
           github_token: ${{ secrets.PULL_REQUEST_TOKEN }}
