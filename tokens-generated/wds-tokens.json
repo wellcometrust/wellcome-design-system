@@ -214,7 +214,8 @@
       }
     },
     "body": {
-      "xl": "400 24px/1.5 Inter, sans-serif",
+      "xxl": "400 24px/1.5 Inter, sans-serif",
+      "xl": "400 20px/1.5 Inter, sans-serif",
       "lg": "400 18px/1.5 Inter, sans-serif",
       "md": "400 16px/1.5 Inter, sans-serif",
       "sm": "400 14px/1.5 Inter, sans-serif",
