@@ -507,6 +507,19 @@
         },
         "type": "typography"
       }
+    },
+    "label": {
+      "md": {
+        "value": {
+          "fontFamily": "{font.family.sans-serif}",
+          "fontWeight": "{font.weight.60}",
+          "fontSize": "{font.size.16}",
+          "lineHeight": "{font.line-height.20}",
+          "letterSpacing": "{font.letter-spacing.25}"
+        },
+        "type": "typography",
+        "description": "Input label use"
+      }
     }
   },
   "space": {

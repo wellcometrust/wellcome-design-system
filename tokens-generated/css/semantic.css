@@ -55,6 +55,7 @@
   --wds-font-body-md: 400 1rem/1.5 Inter, sans-serif;
   --wds-font-body-sm: 400 0.875rem/1.5 Inter, sans-serif;
   --wds-font-body-xs: 400 0.75rem/1.5 Inter, sans-serif;
+  --wds-font-label-md: 600 1rem/1.5 Inter, sans-serif; /* Input label use */
   --wds-space-breakpoint-lg-xxl: 6rem;
   --wds-space-breakpoint-lg-xl: 4rem;
   --wds-space-breakpoint-lg-lg: 3rem;
