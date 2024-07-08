@@ -223,6 +223,10 @@
     },
     "label": {
       "md": "600 16px/1.5 Inter, sans-serif"
+    },
+    "caption": {
+      "sm": "700 12px/1.5 'Courier New', Courier, monospace",
+      "md": "700 14px/1.5 'Courier New', Courier, monospace"
     }
   },
   "breakpoint": {
