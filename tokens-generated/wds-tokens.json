@@ -220,6 +220,9 @@
       "md": "400 16px/1.5 Inter, sans-serif",
       "sm": "400 14px/1.5 Inter, sans-serif",
       "xs": "400 12px/1.5 Inter, sans-serif"
+    },
+    "label": {
+      "md": "600 16px/1.5 Inter, sans-serif"
     }
   },
   "breakpoint": {
