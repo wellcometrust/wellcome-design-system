@@ -364,55 +364,50 @@
   "font": {
     "family": {
       "mono": {
-        "value": "Courier New, Courier, monospace",
+        "value": "“IBM Plex Mono”, “Courier New”, Courier, monospace",
         "type": "fontFamilies"
       },
       "brand": {
-        "value": "Wellcome, sans-serif",
+        "value": "Wellcome, “Wellcome-Bold”, sans-serif",
         "type": "fontFamilies"
       },
-      "sans-serif": {
+      "sans": {
         "value": "Inter, sans-serif",
         "type": "fontFamilies"
       }
     },
     "weight": {
-      "30": {
+      "light": {
         "value": "300",
-        "type": "fontWeights",
-        "description": "Light"
+        "type": "fontWeights"
       },
-      "40": {
+      "regular": {
         "value": "400",
-        "type": "fontWeights",
-        "description": "Regular"
+        "type": "fontWeights"
       },
-      "50": {
+      "medium": {
         "value": "500",
-        "type": "fontWeights",
-        "description": "Medium"
+        "type": "fontWeights"
       },
-      "60": {
+      "semibold": {
         "value": "600",
-        "type": "fontWeights",
-        "description": "Semi-bold"
+        "type": "fontWeights"
       },
-      "70": {
+      "bold": {
         "value": "700",
-        "type": "fontWeights",
-        "description": "Bold"
+        "type": "fontWeights"
       }
     },
     "letter-spacing": {
-      "15": {
+      "tight": {
         "value": "-0.5",
         "type": "letterSpacing"
       },
-      "20": {
+      "comfortable": {
         "value": "0.2",
         "type": "letterSpacing"
       },
-      "25": {
+      "spacious": {
         "value": "0.4",
         "type": "letterSpacing"
       }
@@ -468,19 +463,22 @@
       }
     },
     "line-height": {
-      "10": {
+      "sm": {
         "value": "100%",
-        "type": "lineHeights"
+        "type": "lineHeights",
+        "description": "Buttons, navigation, and other UI components."
       },
-      "15": {
-        "value": "120%",
-        "type": "lineHeights"
+      "md": {
+        "value": "130%",
+        "type": "lineHeights",
+        "description": "Body text and captions."
       },
-      "20": {
-        "value": "150%",
-        "type": "lineHeights"
+      "lg": {
+        "value": "160%",
+        "type": "lineHeights",
+        "description": "Display, heading and long form body text."
       },
-      "25": {
+      "xl": {
         "value": "180%",
         "type": "lineHeights"
       }
@@ -524,49 +522,178 @@
     }
   },
   "space": {
-    "50": {
-      "value": "{space.base} * 0.5",
+    "0": {
+      "value": "0",
       "type": "spacing"
     },
     "100": {
-      "value": "{space.base} * 1",
+      "value": "{dimension.base-8.100}",
       "type": "spacing"
     },
     "150": {
-      "value": "{space.base} * 1.5",
+      "value": "{dimension.base-8.150}",
       "type": "spacing"
     },
     "200": {
-      "value": "{space.base} * 2",
+      "value": "{dimension.base-8.200}",
       "type": "spacing"
     },
     "300": {
-      "value": "{space.base} * 3",
+      "value": "{dimension.base-8.300}",
       "type": "spacing"
     },
     "400": {
-      "value": "{space.base} * 4",
+      "value": "{dimension.base-8.400}",
       "type": "spacing"
     },
     "600": {
-      "value": "{space.base} * 6",
+      "value": "{dimension.base-8.600}",
       "type": "spacing"
     },
     "800": {
-      "value": "{space.base} * 8",
+      "value": "{dimension.base-8.800}",
       "type": "spacing"
     },
     "900": {
-      "value": "{space.base} * 9",
+      "value": "{dimension.base-8.900}",
       "type": "spacing"
     },
     "1200": {
-      "value": "{space.base} * 12",
+      "value": "{dimension.base-8.1200}",
       "type": "spacing"
     },
-    "base": {
-      "value": "8",
+    "050": {
+      "value": "{dimension.base-8.50}",
       "type": "spacing"
+    }
+  },
+  "layer": {
+    "1": {
+      "value": "1",
+      "type": "z-index"
+    },
+    "2": {
+      "value": "2",
+      "type": "z-index"
+    },
+    "3": {
+      "value": "3",
+      "type": "z-index"
+    },
+    "4": {
+      "value": "4",
+      "type": "z-index"
+    },
+    "5": {
+      "value": "5",
+      "type": "z-index"
+    },
+    "6": {
+      "value": "6",
+      "type": "z-index"
+    },
+    "7": {
+      "value": "7",
+      "type": "z-index"
+    },
+    "8": {
+      "value": "8",
+      "type": "z-index"
+    },
+    "9": {
+      "value": "9",
+      "type": "z-index"
+    },
+    "10": {
+      "value": "10",
+      "type": "z-index",
+      "description": "Highest layer"
+    },
+    "-10": {
+      "value": "-10",
+      "type": "z-index",
+      "description": "Negative layer"
+    }
+  },
+  "dimension": {
+    "base-8": {
+      "25": {
+        "value": "{dimension.base-8.100}*0.25",
+        "type": "dimension"
+      },
+      "50": {
+        "value": "{dimension.base-8.100}*0.5",
+        "type": "dimension"
+      },
+      "100": {
+        "value": "8px",
+        "type": "dimension",
+        "description": "Base"
+      },
+      "150": {
+        "value": "{dimension.base-8.100}*1.5",
+        "type": "dimension"
+      },
+      "200": {
+        "value": "{dimension.base-8.100}*2",
+        "type": "dimension"
+      },
+      "300": {
+        "value": "{dimension.base-8.100}*3",
+        "type": "dimension"
+      },
+      "400": {
+        "value": "{dimension.base-8.100}*4",
+        "type": "dimension"
+      },
+      "500": {
+        "value": "{dimension.base-8.100}*5",
+        "type": "dimension"
+      },
+      "600": {
+        "value": "{dimension.base-8.100}*6",
+        "type": "dimension"
+      },
+      "700": {
+        "value": "{dimension.base-8.100}*7",
+        "type": "dimension"
+      },
+      "800": {
+        "value": "{dimension.base-8.100}*8",
+        "type": "dimension"
+      },
+      "900": {
+        "value": "{dimension.base-8.100}*9",
+        "type": "dimension"
+      },
+      "1000": {
+        "value": "{dimension.base-8.100}*10",
+        "type": "dimension"
+      },
+      "1100": {
+        "value": "{dimension.base-8.100}*11",
+        "type": "dimension"
+      },
+      "1200": {
+        "value": "{dimension.base-8.100}*12",
+        "type": "dimension"
+      }
+    }
+  },
+  "border": {
+    "radius": {
+      "circle": {
+        "value": "50%",
+        "type": "borderRadius"
+      },
+      "xs": {
+        "value": "{dimension.base-8.25}",
+        "type": "borderRadius"
+      },
+      "sm": {
+        "value": "{dimension.base-8.50}",
+        "type": "borderRadius"
+      }
     }
   }
 }
