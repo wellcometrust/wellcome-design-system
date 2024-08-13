@@ -16,48 +16,48 @@
   --wds-color-surface-bg-light: #ffffff;
   --wds-color-surface-accent-amber: #fec200;
   --wds-color-surface-accent-red: #e72343;
-  --wds-font-heading-brand-breakpoint-lg-xxl: 700 2.5rem/1.5 Wellcome, sans-serif; /* To be used for heroes */
-  --wds-font-heading-brand-breakpoint-lg-xl: 700 2rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-lg-lg: 700 1.5rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-lg-md: 700 1.25rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-lg-sm: 700 1rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-lg-xs: 700 0.875rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-md-xxl: 700 2.125rem/1.5 Wellcome, sans-serif; /* To be used for heroes */
-  --wds-font-heading-brand-breakpoint-md-xl: 700 1.75rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-md-lg: 700 1.375rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-md-md: 700 1.125rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-md-sm: 700 1rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-md-xs: 700 0.875rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-sm-xxl: 700 2rem/1.5 Wellcome, sans-serif; /* To be used for heroes */
-  --wds-font-heading-brand-breakpoint-sm-xl: 700 1.5rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-sm-lg: 700 1.375rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-sm-md: 700 1.125rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-sm-sm: 700 1rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-brand-breakpoint-sm-xs: 700 0.875rem/1.5 Wellcome, sans-serif;
-  --wds-font-heading-breakpoint-lg-xl: 500 2rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-lg-lg: 500 1.5rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-lg-md: 500 1.25rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-lg-sm: 500 1rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-lg-xs: 500 0.875rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-md-xl: 500 1.75rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-md-lg: 500 1.375rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-md-md: 500 1.125rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-md-sm: 500 1rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-md-xs: 500 0.875rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-sm-xl: 500 1.5rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-sm-lg: 500 1.375rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-sm-md: 500 1.125rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-sm-sm: 500 1rem/1.5 Inter, sans-serif;
-  --wds-font-heading-breakpoint-sm-xs: 500 0.875rem/1.5 Inter, sans-serif;
-  --wds-font-body-xxl: 400 1.5rem/1.5 Inter, sans-serif;
-  --wds-font-body-xl: 400 1.25rem/1.5 Inter, sans-serif;
-  --wds-font-body-lg: 400 1.125rem/1.5 Inter, sans-serif;
-  --wds-font-body-md: 400 1rem/1.5 Inter, sans-serif;
-  --wds-font-body-sm: 400 0.875rem/1.5 Inter, sans-serif;
-  --wds-font-body-xs: 400 0.75rem/1.5 Inter, sans-serif;
-  --wds-font-label-md: 600 1rem/1.5 Inter, sans-serif; /* Input label use */
-  --wds-font-caption-sm: 700 0.75rem/1.5 'Courier New', Courier, monospace;
-  --wds-font-caption-md: 700 0.875rem/1.5 'Courier New', Courier, monospace;
+  --wds-font-heading-brand-breakpoint-lg-xxl: 700 2.5rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif; /* To be used for heroes */
+  --wds-font-heading-brand-breakpoint-lg-xl: 700 2rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-lg-lg: 700 1.5rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-lg-md: 700 1.25rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-lg-sm: 700 1rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-lg-xs: 700 0.875rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-md-xxl: 700 2.125rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif; /* To be used for heroes */
+  --wds-font-heading-brand-breakpoint-md-xl: 700 1.75rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-md-lg: 700 1.375rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-md-md: 700 1.125rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-md-sm: 700 1rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-md-xs: 700 0.875rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-sm-xxl: 700 2rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif; /* To be used for heroes */
+  --wds-font-heading-brand-breakpoint-sm-xl: 700 1.5rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-sm-lg: 700 1.375rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-sm-md: 700 1.125rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-sm-sm: 700 1rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-brand-breakpoint-sm-xs: 700 0.875rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+  --wds-font-heading-breakpoint-lg-xl: 500 2rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-lg-lg: 500 1.5rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-lg-md: 500 1.25rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-lg-sm: 500 1rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-lg-xs: 500 0.875rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-md-xl: 500 1.75rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-md-lg: 500 1.375rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-md-md: 500 1.125rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-md-sm: 500 1rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-md-xs: 500 0.875rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-sm-xl: 500 1.5rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-sm-lg: 500 1.375rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-sm-md: 500 1.125rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-sm-sm: 500 1rem/1.6 Inter, sans-serif;
+  --wds-font-heading-breakpoint-sm-xs: 500 0.875rem/1.6 Inter, sans-serif;
+  --wds-font-body-xxl: 400 1.5rem/1.6 Inter, sans-serif;
+  --wds-font-body-xl: 400 1.25rem/1.6 Inter, sans-serif;
+  --wds-font-body-lg: 400 1.125rem/1.6 Inter, sans-serif;
+  --wds-font-body-md: 400 1rem/1.6 Inter, sans-serif;
+  --wds-font-body-sm: 400 0.875rem/1.6 Inter, sans-serif;
+  --wds-font-body-xs: 400 0.75rem/1.6 Inter, sans-serif;
+  --wds-font-label-md: 600 1rem/1.6 Inter, sans-serif; /* Input label use */
+  --wds-font-caption-sm: 700 0.75rem/1.6 '“IBM Plex Mono”', '“Courier New”', Courier, monospace;
+  --wds-font-caption-md: 700 0.875rem/1.6 '“IBM Plex Mono”', '“Courier New”', Courier, monospace;
   --wds-space-breakpoint-lg-xxl: 6rem;
   --wds-space-breakpoint-lg-xl: 4rem;
   --wds-space-breakpoint-lg-lg: 3rem;
