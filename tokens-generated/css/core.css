@@ -114,11 +114,20 @@
   --wds-font-line-height-xl: 1.8;
   --wds-font-text-case-uppercase: uppercase;
   --wds-font-text-case-sentence: none;
-  --wds-breakpoint-xs: 20rem; /* Web breakpoint - mobile */
-  --wds-breakpoint-sm: 48rem; /* Web breakpoint - tablet */
-  --wds-breakpoint-md: 64rem; /* Web breakpoint - tablet */
-  --wds-breakpoint-lg: 90rem; /* Web breakpoint - desktop */
-  --wds-breakpoint-xl: 120rem; /* Web breakpoint - large desktop */
+  --wds-grid-breakpoint-xs: 20rem; /* Web breakpoint - mobile */
+  --wds-grid-breakpoint-sm: 48rem; /* Web breakpoint - tablet */
+  --wds-grid-breakpoint-md: 64rem; /* Web breakpoint - tablet */
+  --wds-grid-breakpoint-lg: 90rem; /* Web breakpoint - desktop */
+  --wds-grid-breakpoint-xl: 120rem; /* Web breakpoint - large desktop */
+  --wds-grid-columns-lg: 0.75rem;
+  --wds-grid-columns-sm: 0.75rem;
+  --wds-grid-columns-xs: 0.375rem;
+  --wds-grid-margin-lg: 4.5rem;
+  --wds-grid-margin-sm: 2.25rem;
+  --wds-grid-margin-xs: 1rem;
+  --wds-grid-gutter-lg: 3rem;
+  --wds-grid-gutter-sm: 1.5rem;
+  --wds-grid-gutter-xs: 0.75rem;
   --wds-space-0: 0;
   --wds-space-100: 0.5rem;
   --wds-space-150: 0.75rem;

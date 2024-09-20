@@ -229,12 +229,29 @@
       "md": "700 14px/1.6 '“IBM Plex Mono”', '“Courier New”', Courier, monospace"
     }
   },
-  "breakpoint": {
-    "xs": "320px",
-    "sm": "768px",
-    "md": "1024px",
-    "lg": "1440px",
-    "xl": "1920px"
+  "grid": {
+    "breakpoint": {
+      "xs": "320px",
+      "sm": "768px",
+      "md": "1024px",
+      "lg": "1440px",
+      "xl": "1920px"
+    },
+    "columns": {
+      "lg": "12px",
+      "sm": "12px",
+      "xs": "6px"
+    },
+    "margin": {
+      "lg": "72px",
+      "sm": "36px",
+      "xs": "16px"
+    },
+    "gutter": {
+      "lg": "48px",
+      "sm": "24px",
+      "xs": "12px"
+    }
   },
   "space": {
     "0": "0",
