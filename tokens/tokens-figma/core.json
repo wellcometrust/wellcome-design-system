@@ -22,6 +22,10 @@
         "value": "#15a045",
         "type": "color",
         "description": "Not part of design system, only used for annotating page templates for designers"
+      },
+      "test": {
+        "value": "#fb06d1",
+        "type": "color"
       }
     },
     "grey": {
