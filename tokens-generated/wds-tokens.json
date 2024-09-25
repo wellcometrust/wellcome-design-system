@@ -122,6 +122,53 @@
       }
     }
   },
+  "wc-color": {
+    "neutral-cool": {
+      "100": "#121212",
+      "200": "#fbfaf4",
+      "300": "#e8e8e8",
+      "400": "#d9d9d9",
+      "500": "#878787",
+      "600": "#6a6a6a",
+      "700": "#323232"
+    },
+    "neutral-warm": {
+      "200": "#fff9e6",
+      "300": "#edece4",
+      "400": "#d9d8d0"
+    },
+    "yellow": {
+      "200": "#ffebad",
+      "500": "#ffce3c",
+      "700": "#ddb029"
+    },
+    "green": {
+      "200": "#9bc0af",
+      "500": "#4f7d68",
+      "700": "#3a604f"
+    },
+    "blue": {
+      "200": "#a4bfdf",
+      "700": "#27476e"
+    },
+    "turquoise": {
+      "200": "#a2eeed",
+      "700": "#1dbebb"
+    },
+    "salmon": {
+      "200": "#ff9585",
+      "700": "#ff6f59"
+    },
+    "purple": {
+      "200": "#baa4cd",
+      "700": "#724e91"
+    },
+    "UI": {
+      "validation green": "#0b7051",
+      "validation red": "#e01b2f",
+      "focus yellow": "#ffea00"
+    }
+  },
   "font": {
     "family": {
       "mono": "'“IBM Plex Mono”', '“Courier New”', Courier, monospace",
@@ -140,7 +187,7 @@
       "comfortable": "0.2",
       "spacious": "0.4"
     },
-    "size": {
+    "size-old": {
       "10": "10px",
       "12": "12px",
       "14": "14px",
@@ -164,69 +211,51 @@
       "uppercase": "uppercase",
       "sentence": "none"
     },
-    "heading-brand": {
-      "breakpoint-lg": {
-        "xxl": "700 40px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "xl": "700 32px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "lg": "700 24px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "md": "700 20px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "sm": "700 16px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "xs": "700 14px/1.6 Wellcome, “Wellcome-Bold”, sans-serif"
+    "size": {
+      "bp-sm": {
+        "f6": "40.1px",
+        "f5": "34.7px",
+        "f3": "26.1px",
+        "f2": "22.6px",
+        "f1": "19.7px",
+        "f0": "17.1px",
+        "f-1": "14.9px",
+        "f-2": "13px",
+        "f-3": "11.3px"
       },
-      "breakpoint-md": {
-        "xxl": "700 34px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "xl": "700 28px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "lg": "700 22px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "md": "700 18px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "sm": "700 16px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "xs": "700 14px/1.6 Wellcome, “Wellcome-Bold”, sans-serif"
+      "bp-xs": {
+        "f6": "32.4px",
+        "f5": "28.8px",
+        "f3": "22.8px",
+        "f2": "20.3px",
+        "f1": "18px",
+        "f0": "16px",
+        "f-1": "14.2px",
+        "f-2": "12.6px",
+        "f-3": "11.2px"
       },
-      "breakpoint-sm": {
-        "xxl": "700 32px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "xl": "700 24px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "lg": "700 22px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "md": "700 18px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "sm": "700 16px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
-        "xs": "700 14px/1.6 Wellcome, “Wellcome-Bold”, sans-serif"
+      "bp-lg": {
+        "f6": "51.5px",
+        "f5": "43.5px",
+        "f3": "31px",
+        "f2": "26.2px",
+        "f1": "22.2px",
+        "f0": "18.8px",
+        "f-1": "15.9px",
+        "f-2": "13.5px",
+        "f-3": "11.5px"
+      },
+      "bp-xl": {
+        "f6": "59.7px",
+        "f5": "49.8px",
+        "f3": "34.6px",
+        "f2": "28.8px",
+        "f1": "24px",
+        "f0": "20px",
+        "f-1": "16.7px",
+        "f-2": "13.9px",
+        "f-3": "11.6px"
       }
-    },
-    "heading": {
-      "breakpoint-lg": {
-        "xl": "500 32px/1.6 Inter, sans-serif",
-        "lg": "500 24px/1.6 Inter, sans-serif",
-        "md": "500 20px/1.6 Inter, sans-serif",
-        "sm": "500 16px/1.6 Inter, sans-serif",
-        "xs": "500 14px/1.6 Inter, sans-serif"
-      },
-      "breakpoint-md": {
-        "xl": "500 28px/1.6 Inter, sans-serif",
-        "lg": "500 22px/1.6 Inter, sans-serif",
-        "md": "500 18px/1.6 Inter, sans-serif",
-        "sm": "500 16px/1.6 Inter, sans-serif",
-        "xs": "500 14px/1.6 Inter, sans-serif"
-      },
-      "breakpoint-sm": {
-        "xl": "500 24px/1.6 Inter, sans-serif",
-        "lg": "500 22px/1.6 Inter, sans-serif",
-        "md": "500 18px/1.6 Inter, sans-serif",
-        "sm": "500 16px/1.6 Inter, sans-serif",
-        "xs": "500 14px/1.6 Inter, sans-serif"
-      }
-    },
-    "body": {
-      "xxl": "400 24px/1.6 Inter, sans-serif",
-      "xl": "400 20px/1.6 Inter, sans-serif",
-      "lg": "400 18px/1.6 Inter, sans-serif",
-      "md": "400 16px/1.6 Inter, sans-serif",
-      "sm": "400 14px/1.6 Inter, sans-serif",
-      "xs": "400 12px/1.6 Inter, sans-serif"
-    },
-    "label": {
-      "md": "600 16px/1.6 Inter, sans-serif"
-    },
-    "caption": {
-      "sm": "700 12px/1.6 '“IBM Plex Mono”', '“Courier New”', Courier, monospace",
-      "md": "700 14px/1.6 '“IBM Plex Mono”', '“Courier New”', Courier, monospace"
     }
   },
   "grid": {
@@ -317,6 +346,72 @@
       "circle": "50%",
       "xs": "2px",
       "sm": "4px"
+    }
+  },
+  "text": {
+    "heading-brand": {
+      "breakpoint-lg": {
+        "xxl": "700 40px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "xl": "700 32px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "lg": "700 24px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "md": "700 20px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "sm": "700 16px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "xs": "700 14px/1.6 Wellcome, “Wellcome-Bold”, sans-serif"
+      },
+      "breakpoint-md": {
+        "xxl": "700 34px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "xl": "700 28px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "lg": "700 22px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "md": "700 18px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "sm": "700 16px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "xs": "700 14px/1.6 Wellcome, “Wellcome-Bold”, sans-serif"
+      },
+      "breakpoint-sm": {
+        "xxl": "700 32px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "xl": "700 24px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "lg": "700 22px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "md": "700 18px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "sm": "700 16px/1.6 Wellcome, “Wellcome-Bold”, sans-serif",
+        "xs": "700 14px/1.6 Wellcome, “Wellcome-Bold”, sans-serif"
+      }
+    },
+    "heading": {
+      "breakpoint-lg": {
+        "xl": "500 32px/1.6 Inter, sans-serif",
+        "lg": "500 24px/1.6 Inter, sans-serif",
+        "md": "500 20px/1.6 Inter, sans-serif",
+        "sm": "500 16px/1.6 Inter, sans-serif",
+        "xs": "500 14px/1.6 Inter, sans-serif"
+      },
+      "breakpoint-md": {
+        "xl": "500 28px/1.6 Inter, sans-serif",
+        "lg": "500 22px/1.6 Inter, sans-serif",
+        "md": "500 18px/1.6 Inter, sans-serif",
+        "sm": "500 16px/1.6 Inter, sans-serif",
+        "xs": "500 14px/1.6 Inter, sans-serif"
+      },
+      "breakpoint-sm": {
+        "xl": "500 24px/1.6 Inter, sans-serif",
+        "lg": "500 22px/1.6 Inter, sans-serif",
+        "md": "500 18px/1.6 Inter, sans-serif",
+        "sm": "500 16px/1.6 Inter, sans-serif",
+        "xs": "500 14px/1.6 Inter, sans-serif"
+      }
+    },
+    "body": {
+      "xxl": "400 24px/1.6 Inter, sans-serif",
+      "xl": "400 20px/1.6 Inter, sans-serif",
+      "lg": "400 18px/1.6 Inter, sans-serif",
+      "md": "400 16px/1.6 Inter, sans-serif",
+      "sm": "400 14px/1.6 Inter, sans-serif",
+      "xs": "400 12px/1.6 Inter, sans-serif"
+    },
+    "label": {
+      "md": "600 16px/1.6 Inter, sans-serif"
+    },
+    "caption": {
+      "sm": "700 12px/1.6 '“IBM Plex Mono”', '“Courier New”', Courier, monospace",
+      "md": "700 14px/1.6 '“IBM Plex Mono”', '“Courier New”', Courier, monospace"
     }
   }
 }
