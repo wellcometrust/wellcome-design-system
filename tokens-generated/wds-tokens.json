@@ -187,7 +187,7 @@
       "comfortable": "0.2",
       "spacious": "0.4"
     },
-    "size": {
+    "size-old": {
       "10": "10px",
       "12": "12px",
       "14": "14px",

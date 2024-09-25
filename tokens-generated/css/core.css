@@ -123,18 +123,18 @@
   --wds-font-letter-spacing-tight: -0.03125rem;
   --wds-font-letter-spacing-comfortable: 0.0125rem;
   --wds-font-letter-spacing-spacious: 0.025rem;
-  --wds-font-size-10: 0.625rem;
-  --wds-font-size-12: 0.75rem;
-  --wds-font-size-14: 0.875rem;
-  --wds-font-size-16: 1rem;
-  --wds-font-size-18: 1.125rem;
-  --wds-font-size-20: 1.25rem;
-  --wds-font-size-22: 1.375rem;
-  --wds-font-size-24: 1.5rem;
-  --wds-font-size-28: 1.75rem;
-  --wds-font-size-32: 2rem;
-  --wds-font-size-34: 2.125rem;
-  --wds-font-size-40: 2.5rem;
+  --wds-font-size-old-10: 0.625rem;
+  --wds-font-size-old-12: 0.75rem;
+  --wds-font-size-old-14: 0.875rem;
+  --wds-font-size-old-16: 1rem;
+  --wds-font-size-old-18: 1.125rem;
+  --wds-font-size-old-20: 1.25rem;
+  --wds-font-size-old-22: 1.375rem;
+  --wds-font-size-old-24: 1.5rem;
+  --wds-font-size-old-28: 1.75rem;
+  --wds-font-size-old-32: 2rem;
+  --wds-font-size-old-34: 2.125rem;
+  --wds-font-size-old-40: 2.5rem;
   --wds-font-line-height-sm: 1; /* Buttons, navigation, and other UI components. */
   --wds-font-line-height-md: 1.3; /* Body text and captions. */
   --wds-font-line-height-lg: 1.6; /* Display, heading and long form body text. */
