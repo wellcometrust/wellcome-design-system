@@ -63,7 +63,7 @@
       }
     }
   },
-  "font": {
+  "text": {
     "heading-brand": {
       "breakpoint-lg": {
         "xxl": {
