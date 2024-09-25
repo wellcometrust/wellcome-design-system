@@ -361,6 +361,177 @@
       }
     }
   },
+  "wc-color": {
+    "neutral-cool": {
+      "100": {
+        "value": "#121212",
+        "type": "color",
+        "parent": "Primitives/Value"
+      },
+      "200": {
+        "value": "#fbfaf4",
+        "type": "color",
+        "parent": "Primitives/Value"
+      },
+      "300": {
+        "value": "#e8e8e8",
+        "type": "color",
+        "parent": "Primitives/Value"
+      },
+      "400": {
+        "value": "#d9d9d9",
+        "type": "color",
+        "parent": "Primitives/Value"
+      },
+      "500": {
+        "value": "#878787",
+        "type": "color",
+        "parent": "Primitives/Value"
+      },
+      "600": {
+        "value": "#6a6a6a",
+        "type": "color",
+        "parent": "Primitives/Value"
+      },
+      "700": {
+        "value": "#323232",
+        "type": "color",
+        "parent": "Primitives/Value"
+      }
+    },
+    "neutral-warm": {
+      "200": {
+        "value": "#fff9e6",
+        "type": "color",
+        "parent": "Primitives/Value"
+      },
+      "300": {
+        "value": "#edece4",
+        "type": "color",
+        "parent": "Primitives/Value"
+      },
+      "400": {
+        "value": "#d9d8d0",
+        "type": "color",
+        "parent": "Primitives/Value"
+      }
+    },
+    "yellow": {
+      "200": {
+        "value": "#ffebad",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      },
+      "500": {
+        "value": "#ffce3c",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      },
+      "700": {
+        "value": "#ddb029",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      }
+    },
+    "green": {
+      "200": {
+        "value": "#9bc0af",
+        "type": "color",
+        "parent": "Primitives/Value"
+      },
+      "500": {
+        "value": "#4f7d68",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      },
+      "700": {
+        "value": "#3a604f",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      }
+    },
+    "blue": {
+      "200": {
+        "value": "#a4bfdf",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      },
+      "700": {
+        "value": "#27476e",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      }
+    },
+    "turquoise": {
+      "200": {
+        "value": "#a2eeed",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      },
+      "700": {
+        "value": "#1dbebb",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      }
+    },
+    "salmon": {
+      "200": {
+        "value": "#ff9585",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      },
+      "700": {
+        "value": "#ff6f59",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      }
+    },
+    "purple": {
+      "200": {
+        "value": "#baa4cd",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      },
+      "700": {
+        "value": "#724e91",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      }
+    },
+    "UI": {
+      "validation green": {
+        "value": "#0b7051",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      },
+      "validation red": {
+        "value": "#e01b2f",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      },
+      "focus yellow": {
+        "value": "#ffea00",
+        "type": "color",
+        "parent": "Primitives/Value",
+        "description": ""
+      }
+    }
+  },
   "font": {
     "family": {
       "mono": {

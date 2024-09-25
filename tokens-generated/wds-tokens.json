@@ -122,6 +122,53 @@
       }
     }
   },
+  "wc-color": {
+    "neutral-cool": {
+      "100": "#121212",
+      "200": "#fbfaf4",
+      "300": "#e8e8e8",
+      "400": "#d9d9d9",
+      "500": "#878787",
+      "600": "#6a6a6a",
+      "700": "#323232"
+    },
+    "neutral-warm": {
+      "200": "#fff9e6",
+      "300": "#edece4",
+      "400": "#d9d8d0"
+    },
+    "yellow": {
+      "200": "#ffebad",
+      "500": "#ffce3c",
+      "700": "#ddb029"
+    },
+    "green": {
+      "200": "#9bc0af",
+      "500": "#4f7d68",
+      "700": "#3a604f"
+    },
+    "blue": {
+      "200": "#a4bfdf",
+      "700": "#27476e"
+    },
+    "turquoise": {
+      "200": "#a2eeed",
+      "700": "#1dbebb"
+    },
+    "salmon": {
+      "200": "#ff9585",
+      "700": "#ff6f59"
+    },
+    "purple": {
+      "200": "#baa4cd",
+      "700": "#724e91"
+    },
+    "UI": {
+      "validation green": "#0b7051",
+      "validation red": "#e01b2f",
+      "focus yellow": "#ffea00"
+    }
+  },
   "font": {
     "family": {
       "mono": "'“IBM Plex Mono”', '“Courier New”', Courier, monospace",
