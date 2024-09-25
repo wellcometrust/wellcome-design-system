@@ -663,6 +663,160 @@
         "value": "none",
         "type": "textCase"
       }
+    },
+    "size": {
+      "bp-sm": {
+        "f6": {
+          "value": "40.1",
+          "type": "fontSizes"
+        },
+        "f5": {
+          "value": "34.7",
+          "type": "fontSizes"
+        },
+        "f3": {
+          "value": "26.1",
+          "type": "fontSizes"
+        },
+        "f2": {
+          "value": "22.6",
+          "type": "fontSizes"
+        },
+        "f1": {
+          "value": "19.7",
+          "type": "fontSizes"
+        },
+        "f0": {
+          "value": "17.1",
+          "type": "fontSizes"
+        },
+        "f-1": {
+          "value": "14.9",
+          "type": "fontSizes"
+        },
+        "f-2": {
+          "value": "13",
+          "type": "fontSizes"
+        },
+        "f-3": {
+          "value": "11.3",
+          "type": "fontSizes"
+        }
+      },
+      "bp-xs": {
+        "f6": {
+          "value": "32.4",
+          "type": "fontSizes"
+        },
+        "f5": {
+          "value": "28.8",
+          "type": "fontSizes"
+        },
+        "f3": {
+          "value": "22.8",
+          "type": "fontSizes"
+        },
+        "f2": {
+          "value": "20.3",
+          "type": "fontSizes"
+        },
+        "f1": {
+          "value": "18",
+          "type": "fontSizes"
+        },
+        "f0": {
+          "value": "16",
+          "type": "fontSizes"
+        },
+        "f-1": {
+          "value": "14.2",
+          "type": "fontSizes"
+        },
+        "f-2": {
+          "value": "12.6",
+          "type": "fontSizes"
+        },
+        "f-3": {
+          "value": "11.2",
+          "type": "fontSizes"
+        }
+      },
+      "bp-lg": {
+        "f6": {
+          "value": "51.5",
+          "type": "fontSizes"
+        },
+        "f5": {
+          "value": "43.5",
+          "type": "fontSizes"
+        },
+        "f3": {
+          "value": "31",
+          "type": "fontSizes"
+        },
+        "f2": {
+          "value": "26.2",
+          "type": "fontSizes"
+        },
+        "f1": {
+          "value": "22.2",
+          "type": "fontSizes"
+        },
+        "f0": {
+          "value": "18.8",
+          "type": "fontSizes"
+        },
+        "f-1": {
+          "value": "15.9",
+          "type": "fontSizes"
+        },
+        "f-2": {
+          "value": "13.5",
+          "type": "fontSizes"
+        },
+        "f-3": {
+          "value": "11.5",
+          "type": "fontSizes"
+        }
+      },
+      "bp-xl": {
+        "f6": {
+          "value": "59.7",
+          "type": "fontSizes"
+        },
+        "f5": {
+          "value": "49.8",
+          "type": "fontSizes"
+        },
+        "f3": {
+          "value": "34.6",
+          "type": "fontSizes"
+        },
+        "f2": {
+          "value": "28.8",
+          "type": "fontSizes"
+        },
+        "f1": {
+          "value": "24",
+          "type": "fontSizes"
+        },
+        "f0": {
+          "value": "20",
+          "type": "fontSizes"
+        },
+        "f-1": {
+          "value": "16.7",
+          "type": "fontSizes"
+        },
+        "f-2": {
+          "value": "13.9",
+          "type": "fontSizes"
+        },
+        "f-3": {
+          "value": "11.6",
+          "type": "fontSizes"
+        }
+      }
     }
   },
   "grid": {

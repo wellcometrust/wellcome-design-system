@@ -141,6 +141,42 @@
   --wds-font-line-height-xl: 1.8;
   --wds-font-text-case-uppercase: uppercase;
   --wds-font-text-case-sentence: none;
+  --wds-font-size-bp-sm-f6: 2.50625rem;
+  --wds-font-size-bp-sm-f5: 2.16875rem;
+  --wds-font-size-bp-sm-f3: 1.63125rem;
+  --wds-font-size-bp-sm-f2: 1.4125rem;
+  --wds-font-size-bp-sm-f1: 1.23125rem;
+  --wds-font-size-bp-sm-f0: 1.06875rem;
+  --wds-font-size-bp-sm-f-1: 0.93125rem;
+  --wds-font-size-bp-sm-f-2: 0.8125rem;
+  --wds-font-size-bp-sm-f-3: 0.70625rem;
+  --wds-font-size-bp-xs-f6: 2.025rem;
+  --wds-font-size-bp-xs-f5: 1.8rem;
+  --wds-font-size-bp-xs-f3: 1.425rem;
+  --wds-font-size-bp-xs-f2: 1.26875rem;
+  --wds-font-size-bp-xs-f1: 1.125rem;
+  --wds-font-size-bp-xs-f0: 1rem;
+  --wds-font-size-bp-xs-f-1: 0.8875rem;
+  --wds-font-size-bp-xs-f-2: 0.7875rem;
+  --wds-font-size-bp-xs-f-3: 0.7rem;
+  --wds-font-size-bp-lg-f6: 3.21875rem;
+  --wds-font-size-bp-lg-f5: 2.71875rem;
+  --wds-font-size-bp-lg-f3: 1.9375rem;
+  --wds-font-size-bp-lg-f2: 1.6375rem;
+  --wds-font-size-bp-lg-f1: 1.3875rem;
+  --wds-font-size-bp-lg-f0: 1.175rem;
+  --wds-font-size-bp-lg-f-1: 0.99375rem;
+  --wds-font-size-bp-lg-f-2: 0.84375rem;
+  --wds-font-size-bp-lg-f-3: 0.71875rem;
+  --wds-font-size-bp-xl-f6: 3.73125rem;
+  --wds-font-size-bp-xl-f5: 3.1125rem;
+  --wds-font-size-bp-xl-f3: 2.1625rem;
+  --wds-font-size-bp-xl-f2: 1.8rem;
+  --wds-font-size-bp-xl-f1: 1.5rem;
+  --wds-font-size-bp-xl-f0: 1.25rem;
+  --wds-font-size-bp-xl-f-1: 1.04375rem;
+  --wds-font-size-bp-xl-f-2: 0.86875rem;
+  --wds-font-size-bp-xl-f-3: 0.725rem;
   --wds-grid-breakpoint-xs: 20rem; /* Web breakpoint - mobile */
   --wds-grid-breakpoint-sm: 48rem; /* Web breakpoint - tablet */
   --wds-grid-breakpoint-md: 64rem; /* Web breakpoint - tablet */
