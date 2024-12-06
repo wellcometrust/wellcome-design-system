@@ -97,40 +97,17 @@
       "80": "#574f00",
       "90": "#3d3800",
       "05": "#fffef0"
-    },
-    "text": {
-      "default": "#292929",
-      "subtle": "#767676",
-      "lighter": "#f2f2f2",
-      "lightest": "#ffffff",
-      "light": "#cccccc"
-    },
-    "system": {
-      "error": "#e10f2d",
-      "success": "#4c8026",
-      "warning": "#946f00",
-      "info": "#0055cc"
-    },
-    "surface": {
-      "bg": {
-        "dark": "#002e45",
-        "light": "#ffffff"
-      },
-      "accent": {
-        "amber": "#fec200",
-        "red": "#e72343"
-      }
     }
   },
   "wc-color": {
     "neutral-cool": {
-      "100": "#121212",
       "200": "#fbfaf4",
       "300": "#e8e8e8",
       "400": "#d9d9d9",
       "500": "#878787",
       "600": "#6a6a6a",
-      "700": "#323232"
+      "700": "#323232",
+      "1000": "#121212"
     },
     "neutral-warm": {
       "200": "#fff9e6",
@@ -294,38 +271,25 @@
     "900": "72px",
     "1200": "96px",
     "050": "4px",
-    "breakpoint-lg": {
-      "xxl": "96px",
-      "xl": "64px",
-      "lg": "48px",
-      "md": "32px",
-      "sm": "16px",
-      "xs": "8px",
-      "xxs": "4px"
-    },
-    "breakpoint-md": {
-      "xxl": "72px",
-      "xl": "48px",
-      "lg": "32px",
-      "md": "24px",
-      "sm": "16px",
-      "xs": "8px",
-      "xxs": "4px"
-    },
-    "breakpoint-sm": {
-      "xxl": "48px",
-      "xl": "32px",
-      "lg": "24px",
-      "md": "16px",
-      "sm": "12px",
-      "xs": "8px",
-      "xxs": "4px"
+    "075": "6px",
+    "static": {
+      "100": "8px",
+      "200": "16px",
+      "300": "24px",
+      "400": "32px",
+      "600": "48px",
+      "800": "64px",
+      "900": "72px",
+      "1200": "96px",
+      "050": "4px"
     }
   },
   "dimension": {
+    "999": "999px",
     "base-8": {
       "25": "2px",
       "50": "4px",
+      "75": "6px",
       "100": "8px",
       "150": "12px",
       "200": "16px",
@@ -341,12 +305,10 @@
       "1200": "96px"
     }
   },
-  "border": {
-    "radius": {
-      "circle": "50%",
-      "xs": "2px",
-      "sm": "4px"
-    }
+  "opacity": {
+    "50": "0.5",
+    "100": "1",
+    "transparent": "0"
   },
   "text": {
     "heading-brand": {
@@ -412,6 +374,16 @@
     "caption": {
       "sm": "700 12px/1.6 '“IBM Plex Mono”', '“Courier New”', Courier, monospace",
       "md": "700 14px/1.6 '“IBM Plex Mono”', '“Courier New”', Courier, monospace"
+    }
+  },
+  "border": {
+    "radius": {
+      "none": "0",
+      "xs": "2px",
+      "sm": "4px",
+      "md": "8px",
+      "lg": "16px",
+      "full": "999px"
     }
   }
 }

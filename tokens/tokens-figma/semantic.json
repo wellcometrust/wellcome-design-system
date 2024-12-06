@@ -1,68 +1,4 @@
 {
-  "color": {
-    "text": {
-      "default": {
-        "value": "{color.grey.80}",
-        "type": "color"
-      },
-      "subtle": {
-        "value": "{color.grey.60}",
-        "type": "color"
-      },
-      "lighter": {
-        "value": "{color.grey.05}",
-        "type": "color"
-      },
-      "lightest": {
-        "value": "{color.white}",
-        "type": "color"
-      },
-      "light": {
-        "value": "{color.grey.20}",
-        "type": "color"
-      }
-    },
-    "system": {
-      "error": {
-        "value": "{color.red.60}",
-        "type": "color"
-      },
-      "success": {
-        "value": "{color.green.60}",
-        "type": "color"
-      },
-      "warning": {
-        "value": "{color.amber.60}",
-        "type": "color"
-      },
-      "info": {
-        "value": "{color.blue.60}",
-        "type": "color"
-      }
-    },
-    "surface": {
-      "bg": {
-        "dark": {
-          "value": "{color.blue.90}",
-          "type": "color"
-        },
-        "light": {
-          "value": "{color.white}",
-          "type": "color"
-        }
-      },
-      "accent": {
-        "amber": {
-          "value": "{color.amber.30}",
-          "type": "color"
-        },
-        "red": {
-          "value": "{color.red.50}",
-          "type": "color"
-        }
-      }
-    }
-  },
   "text": {
     "heading-brand": {
       "breakpoint-lg": {
@@ -545,94 +481,70 @@
     }
   },
   "space": {
-    "breakpoint-lg": {
-      "xxl": {
-        "value": "{space.1200}",
+    "static": {
+      "100": {
+        "value": "{space.100}",
         "type": "spacing"
       },
-      "xl": {
+      "200": {
+        "value": "{space.200}",
+        "type": "spacing"
+      },
+      "300": {
+        "value": "{space.300}",
+        "type": "spacing"
+      },
+      "400": {
+        "value": "{space.400}",
+        "type": "spacing"
+      },
+      "600": {
+        "value": "{space.600}",
+        "type": "spacing"
+      },
+      "800": {
         "value": "{space.800}",
         "type": "spacing"
       },
-      "lg": {
-        "value": "{space.600}",
-        "type": "spacing"
-      },
-      "md": {
-        "value": "{space.400}",
-        "type": "spacing"
-      },
-      "sm": {
-        "value": "{space.200}",
-        "type": "spacing"
-      },
-      "xs": {
-        "value": "{space.100}",
-        "type": "spacing"
-      },
-      "xxs": {
-        "value": "{space.050}",
-        "type": "spacing"
-      }
-    },
-    "breakpoint-md": {
-      "xxl": {
+      "900": {
         "value": "{space.900}",
         "type": "spacing"
       },
-      "xl": {
-        "value": "{space.600}",
+      "1200": {
+        "value": "{space.1200}",
         "type": "spacing"
       },
-      "lg": {
-        "value": "{space.400}",
-        "type": "spacing"
-      },
-      "md": {
-        "value": "{space.300}",
-        "type": "spacing"
-      },
-      "sm": {
-        "value": "{space.200}",
-        "type": "spacing"
-      },
-      "xs": {
-        "value": "{space.100}",
-        "type": "spacing"
-      },
-      "xxs": {
+      "050": {
         "value": "{space.050}",
         "type": "spacing"
       }
-    },
-    "breakpoint-sm": {
-      "xxl": {
-        "value": "{space.600}",
-        "type": "spacing"
-      },
-      "xl": {
-        "value": "{space.400}",
-        "type": "spacing"
-      },
-      "lg": {
-        "value": "{space.300}",
-        "type": "spacing"
-      },
-      "md": {
-        "value": "{space.200}",
-        "type": "spacing"
-      },
-      "sm": {
-        "value": "{space.150}",
-        "type": "spacing"
+    }
+  },
+  "border": {
+    "radius": {
+      "none": {
+        "value": "0",
+        "type": "borderRadius"
       },
       "xs": {
-        "value": "{space.100}",
-        "type": "spacing"
+        "value": "{dimension.base-8.25}",
+        "type": "borderRadius"
       },
-      "xxs": {
-        "value": "{space.050}",
-        "type": "spacing"
+      "sm": {
+        "value": "{dimension.base-8.50}",
+        "type": "borderRadius"
+      },
+      "md": {
+        "value": "{dimension.base-8.100}",
+        "type": "borderRadius"
+      },
+      "lg": {
+        "value": "{dimension.base-8.200}",
+        "type": "borderRadius"
+      },
+      "full": {
+        "value": "{dimension.999}",
+        "type": "borderRadius"
       }
     }
   }

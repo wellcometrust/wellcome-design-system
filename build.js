@@ -4,6 +4,7 @@ import { registerTransforms } from "@tokens-studio/sd-transforms";
 import filterExcludeTokens from "./utils/filters/filterExcludeTokens.js";
 
 import formatFontFace from "./utils/formats/formatFontFace.js";
+import formatResponsiveCSS from "./utils/formats/formatResponsiveCSS.js";
 
 import transformFont from "./utils/transforms/transformFont.js";
 import transformToRem from "./utils/transforms/transformToRem.js";
@@ -25,14 +26,30 @@ const sd = new StyleDictionary({
       ...common,
       transforms: ["name/kebab", "custom/rem"],
       files: tokenGroups.map((groupName) => {
+        const extraPath =
+          groupName === "semantic"
+            ? ["breakpoint-lg", "breakpoint-md", "breakpoint-sm"]
+            : [];
+
         return {
           destination: `css/${groupName}.css`,
           format: "css/variables",
           filter: (token) =>
             token.filePath === `tokens/tokens-figma/${groupName}.json` &&
-            filterExcludeTokens(token),
+            filterExcludeTokens(token, extraPath),
         };
       }),
+    },
+    cssResponsive: {
+      ...common,
+      transforms: ["name/kebab", "custom/rem"],
+      files: [
+        {
+          destination: "css/responsive.css",
+          format: "custom/css/responsive",
+          filter: (token) => filterExcludeTokens(token),
+        },
+      ],
     },
     fonts: {
       ...common,
@@ -72,6 +89,11 @@ sd.registerFormat({
     formatFontFace(allTokens, options),
 });
 
+sd.registerFormat({
+  name: "custom/css/responsive",
+  format: ({ dictionary }) => formatResponsiveCSS(dictionary),
+});
+
 sd.registerTransform({
   name: "custom/font",
   type: "attribute",
@@ -84,13 +106,9 @@ sd.registerTransform({
   type: "value",
   transitive: true,
   filter: (token) =>
-    [
-      "sizing",
-      "spacing",
-      "borderRadius",
-      "fontSizes",
-      "letterSpacing",
-    ].includes(token.type),
+    ["spacing", "borderRadius", "fontSizes", "letterSpacing"].includes(
+      token.type,
+    ),
   transform: (token) => transformToRem(token.value),
 });
 

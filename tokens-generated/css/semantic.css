@@ -3,73 +3,15 @@
  */
 
 :root {
-  --wds-color-text-default: #292929;
-  --wds-color-text-subtle: #767676;
-  --wds-color-text-lighter: #f2f2f2;
-  --wds-color-text-lightest: #ffffff;
-  --wds-color-text-light: #cccccc;
-  --wds-color-system-error: #e10f2d;
-  --wds-color-system-success: #4c8026;
-  --wds-color-system-warning: #946f00;
-  --wds-color-system-info: #0055cc;
-  --wds-color-surface-bg-dark: #002e45;
-  --wds-color-surface-bg-light: #ffffff;
-  --wds-color-surface-accent-amber: #fec200;
-  --wds-color-surface-accent-red: #e72343;
-  --wds-space-breakpoint-lg-xxl: 6rem;
-  --wds-space-breakpoint-lg-xl: 4rem;
-  --wds-space-breakpoint-lg-lg: 3rem;
-  --wds-space-breakpoint-lg-md: 2rem;
-  --wds-space-breakpoint-lg-sm: 1rem;
-  --wds-space-breakpoint-lg-xs: 0.5rem;
-  --wds-space-breakpoint-lg-xxs: 0.25rem;
-  --wds-space-breakpoint-md-xxl: 4.5rem;
-  --wds-space-breakpoint-md-xl: 3rem;
-  --wds-space-breakpoint-md-lg: 2rem;
-  --wds-space-breakpoint-md-md: 1.5rem;
-  --wds-space-breakpoint-md-sm: 1rem;
-  --wds-space-breakpoint-md-xs: 0.5rem;
-  --wds-space-breakpoint-md-xxs: 0.25rem;
-  --wds-space-breakpoint-sm-xxl: 3rem;
-  --wds-space-breakpoint-sm-xl: 2rem;
-  --wds-space-breakpoint-sm-lg: 1.5rem;
-  --wds-space-breakpoint-sm-md: 1rem;
-  --wds-space-breakpoint-sm-sm: 0.75rem;
-  --wds-space-breakpoint-sm-xs: 0.5rem;
-  --wds-space-breakpoint-sm-xxs: 0.25rem;
-  --wds-text-heading-brand-breakpoint-lg-xxl: 700 2.5rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif; /* To be used for heroes */
-  --wds-text-heading-brand-breakpoint-lg-xl: 700 2rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-lg-lg: 700 1.5rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-lg-md: 700 1.25rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-lg-sm: 700 1rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-lg-xs: 700 0.875rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-md-xxl: 700 2.125rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif; /* To be used for heroes */
-  --wds-text-heading-brand-breakpoint-md-xl: 700 1.75rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-md-lg: 700 1.375rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-md-md: 700 1.125rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-md-sm: 700 1rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-md-xs: 700 0.875rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-sm-xxl: 700 2rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif; /* To be used for heroes */
-  --wds-text-heading-brand-breakpoint-sm-xl: 700 1.5rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-sm-lg: 700 1.375rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-sm-md: 700 1.125rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-sm-sm: 700 1rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-brand-breakpoint-sm-xs: 700 0.875rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
-  --wds-text-heading-breakpoint-lg-xl: 500 2rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-lg-lg: 500 1.5rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-lg-md: 500 1.25rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-lg-sm: 500 1rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-lg-xs: 500 0.875rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-md-xl: 500 1.75rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-md-lg: 500 1.375rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-md-md: 500 1.125rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-md-sm: 500 1rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-md-xs: 500 0.875rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-sm-xl: 500 1.5rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-sm-lg: 500 1.375rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-sm-md: 500 1.125rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-sm-sm: 500 1rem/1.6 Inter, sans-serif;
-  --wds-text-heading-breakpoint-sm-xs: 500 0.875rem/1.6 Inter, sans-serif;
+  --wds-space-static-100: 0.5rem;
+  --wds-space-static-200: 1rem;
+  --wds-space-static-300: 1.5rem;
+  --wds-space-static-400: 2rem;
+  --wds-space-static-600: 3rem;
+  --wds-space-static-800: 4rem;
+  --wds-space-static-900: 4.5rem;
+  --wds-space-static-1200: 6rem;
+  --wds-space-static-050: 0.25rem;
   --wds-text-body-xxl: 400 1.5rem/1.6 Inter, sans-serif;
   --wds-text-body-xl: 400 1.25rem/1.6 Inter, sans-serif;
   --wds-text-body-lg: 400 1.125rem/1.6 Inter, sans-serif;
@@ -79,4 +21,10 @@
   --wds-text-label-md: 600 1rem/1.6 Inter, sans-serif; /* Input label use */
   --wds-text-caption-sm: 700 0.75rem/1.6 '“IBM Plex Mono”', '“Courier New”', Courier, monospace;
   --wds-text-caption-md: 700 0.875rem/1.6 '“IBM Plex Mono”', '“Courier New”', Courier, monospace;
+  --wds-border-radius-none: 0;
+  --wds-border-radius-xs: 0.125rem;
+  --wds-border-radius-sm: 0.25rem;
+  --wds-border-radius-md: 0.5rem;
+  --wds-border-radius-lg: 1rem;
+  --wds-border-radius-full: 62.4375rem;
 }

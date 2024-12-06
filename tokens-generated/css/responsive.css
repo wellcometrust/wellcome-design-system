@@ -1,0 +1,45 @@
+:root {
+--wds-text-heading-brand-xxl: 700 2rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-xl: 700 1.5rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-lg: 700 1.375rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-md: 700 1.125rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-sm: 700 1rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-xs: 700 0.875rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-xl: 500 1.5rem/1.6 Inter, sans-serif;
+--wds-text-heading-lg: 500 1.375rem/1.6 Inter, sans-serif;
+--wds-text-heading-md: 500 1.125rem/1.6 Inter, sans-serif;
+--wds-text-heading-sm: 500 1rem/1.6 Inter, sans-serif;
+--wds-text-heading-xs: 500 0.875rem/1.6 Inter, sans-serif;
+}
+
+@media (min-width: 1024px) {
+  :root {
+--wds-text-heading-brand-xxl: 700 2.125rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-xl: 700 1.75rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-lg: 700 1.375rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-md: 700 1.125rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-sm: 700 1rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-xs: 700 0.875rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-xl: 500 1.75rem/1.6 Inter, sans-serif;
+--wds-text-heading-lg: 500 1.375rem/1.6 Inter, sans-serif;
+--wds-text-heading-md: 500 1.125rem/1.6 Inter, sans-serif;
+--wds-text-heading-sm: 500 1rem/1.6 Inter, sans-serif;
+--wds-text-heading-xs: 500 0.875rem/1.6 Inter, sans-serif;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+--wds-text-heading-brand-xxl: 700 2.5rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-xl: 700 2rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-lg: 700 1.5rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-md: 700 1.25rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-sm: 700 1rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-brand-xs: 700 0.875rem/1.6 Wellcome, “Wellcome-Bold”, sans-serif;
+--wds-text-heading-xl: 500 2rem/1.6 Inter, sans-serif;
+--wds-text-heading-lg: 500 1.5rem/1.6 Inter, sans-serif;
+--wds-text-heading-md: 500 1.25rem/1.6 Inter, sans-serif;
+--wds-text-heading-sm: 500 1rem/1.6 Inter, sans-serif;
+--wds-text-heading-xs: 500 0.875rem/1.6 Inter, sans-serif;
+  }
+}
