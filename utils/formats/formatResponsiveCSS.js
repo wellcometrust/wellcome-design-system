@@ -1,11 +1,7 @@
-const bgName = {
-  mobile: "breakpoint-sm",
-  tablet: "breakpoint-md",
-  desktop: "breakpoint-lg",
-};
+import CONSTANTS from "../constants.js";
 
 const createRegex = () => {
-  const regexStr = Object.values(bgName)
+  const regexStr = Object.values(CONSTANTS.BREAKPOINTS)
     .map((value) => `-${value}`)
     .join("|");
 
@@ -13,6 +9,8 @@ const createRegex = () => {
 };
 
 const formatResponsiveCSS = (dictionary) => {
+  const breakpoints = CONSTANTS.BREAKPOINTS;
+
   const deviceTokenName = "grid";
   const excludeTokens = [deviceTokenName];
 
@@ -21,6 +19,7 @@ const formatResponsiveCSS = (dictionary) => {
   const excludedTokens = dictionary.allTokens.filter(
     (token) => !excludeTokens.some((exclude) => token.path.includes(exclude)),
   );
+
   const filterTokens = (name) =>
     excludedTokens.filter(
       (token) =>
@@ -45,7 +44,7 @@ const formatResponsiveCSS = (dictionary) => {
   };
 
   // Add mobile first tokens
-  const mobileTokens = filterTokens(bgName.mobile);
+  const mobileTokens = filterTokens(breakpoints.mobile);
   if (mobileTokens?.length > 0) {
     output += `:root {\n`;
     output += createVariables(mobileTokens);
@@ -53,12 +52,12 @@ const formatResponsiveCSS = (dictionary) => {
   }
 
   // Find breakpoint values
-  const tablet = findDevice(bgName.tablet);
-  const desktop = findDevice(bgName.desktop);
+  const tablet = findDevice(breakpoints.tablet);
+  const desktop = findDevice(breakpoints.desktop);
 
   if (tablet || desktop) {
     // Add tablet tokens inside media query
-    const tabletTokens = filterTokens(bgName.tablet);
+    const tabletTokens = filterTokens(breakpoints.tablet);
 
     if (tabletTokens?.length > 0) {
       output += `@media (min-width: ${tablet.value}) {\n`;
@@ -69,7 +68,7 @@ const formatResponsiveCSS = (dictionary) => {
     }
 
     // Add desktop tokens inside media query
-    const desktopTokens = filterTokens(bgName.desktop);
+    const desktopTokens = filterTokens(breakpoints.desktop);
 
     if (desktopTokens?.length > 0) {
       output += `@media (min-width: ${desktop.value}) {\n`;
