@@ -85,13 +85,13 @@
   --wds-color-yellow-80: #574f00;
   --wds-color-yellow-90: #3d3800;
   --wds-color-yellow-05: #fffef0;
-  --wds-wc-color-neutral-cool-100: #121212;
   --wds-wc-color-neutral-cool-200: #fbfaf4;
   --wds-wc-color-neutral-cool-300: #e8e8e8;
   --wds-wc-color-neutral-cool-400: #d9d9d9;
   --wds-wc-color-neutral-cool-500: #878787;
   --wds-wc-color-neutral-cool-600: #6a6a6a;
   --wds-wc-color-neutral-cool-700: #323232;
+  --wds-wc-color-neutral-cool-1000: #121212;
   --wds-wc-color-neutral-warm-200: #fff9e6;
   --wds-wc-color-neutral-warm-300: #edece4;
   --wds-wc-color-neutral-warm-400: #d9d8d0;
@@ -177,20 +177,20 @@
   --wds-font-size-bp-xl-f-1: 1.04375rem;
   --wds-font-size-bp-xl-f-2: 0.86875rem;
   --wds-font-size-bp-xl-f-3: 0.725rem;
-  --wds-grid-breakpoint-xs: 20rem; /* Web breakpoint - mobile */
-  --wds-grid-breakpoint-sm: 48rem; /* Web breakpoint - tablet */
-  --wds-grid-breakpoint-md: 64rem; /* Web breakpoint - tablet */
-  --wds-grid-breakpoint-lg: 90rem; /* Web breakpoint - desktop */
-  --wds-grid-breakpoint-xl: 120rem; /* Web breakpoint - large desktop */
-  --wds-grid-columns-lg: 0.75rem;
-  --wds-grid-columns-sm: 0.75rem;
-  --wds-grid-columns-xs: 0.375rem;
-  --wds-grid-margin-lg: 4.5rem;
-  --wds-grid-margin-sm: 2.25rem;
-  --wds-grid-margin-xs: 1rem;
-  --wds-grid-gutter-lg: 3rem;
-  --wds-grid-gutter-sm: 1.5rem;
-  --wds-grid-gutter-xs: 0.75rem;
+  --wds-grid-breakpoint-xs: 320px; /* Web breakpoint - mobile */
+  --wds-grid-breakpoint-sm: 768px; /* Web breakpoint - tablet */
+  --wds-grid-breakpoint-md: 1024px; /* Web breakpoint - tablet */
+  --wds-grid-breakpoint-lg: 1440px; /* Web breakpoint - desktop */
+  --wds-grid-breakpoint-xl: 1920px; /* Web breakpoint - large desktop */
+  --wds-grid-columns-lg: 12px;
+  --wds-grid-columns-sm: 12px;
+  --wds-grid-columns-xs: 6px;
+  --wds-grid-margin-lg: 72px;
+  --wds-grid-margin-sm: 36px;
+  --wds-grid-margin-xs: 16px;
+  --wds-grid-gutter-lg: 48px;
+  --wds-grid-gutter-sm: 24px;
+  --wds-grid-gutter-xs: 12px;
   --wds-space-0: 0;
   --wds-space-100: 0.5rem;
   --wds-space-150: 0.75rem;
@@ -202,8 +202,11 @@
   --wds-space-900: 4.5rem;
   --wds-space-1200: 6rem;
   --wds-space-050: 0.25rem;
+  --wds-space-075: 0.375rem;
+  --wds-dimension-999: 999px;
   --wds-dimension-base-8-25: 2px;
   --wds-dimension-base-8-50: 4px;
+  --wds-dimension-base-8-75: 6px;
   --wds-dimension-base-8-100: 8px; /* Base */
   --wds-dimension-base-8-150: 12px;
   --wds-dimension-base-8-200: 16px;
@@ -217,7 +220,7 @@
   --wds-dimension-base-8-1000: 80px;
   --wds-dimension-base-8-1100: 88px;
   --wds-dimension-base-8-1200: 96px;
-  --wds-border-radius-circle: 3.125rem;
-  --wds-border-radius-xs: 0.125rem;
-  --wds-border-radius-sm: 0.25rem;
+  --wds-opacity-50: 0.5; /* Used as a background overlay to mute the background when another layer (e.g. modal, drawer) is opened. */
+  --wds-opacity-100: 1;
+  --wds-opacity-transparent: 0;
 }
