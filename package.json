@@ -1,6 +1,6 @@
 {
   "name": "@wellcometrust/wellcome-design-system",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Design system for Wellcome and Wellcome Collection products",
   "main": "index.js",
   "type": "module",
