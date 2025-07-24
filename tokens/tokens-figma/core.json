@@ -23,9 +23,10 @@
         "type": "color",
         "description": "Not part of design system, only used for annotating page templates for designers"
       },
-      "test": {
-        "value": "#f8ff00",
-        "type": "color"
+      "pink": {
+        "value": "#ea07e4",
+        "type": "color",
+        "description": "Not part of design system, only used for annotating page templates for designers"
       }
     },
     "grey": {
@@ -367,11 +368,6 @@
   },
   "wc-color": {
     "neutral-cool": {
-      "100": {
-        "value": "#121212",
-        "type": "color",
-        "parent": "Primitives/Value"
-      },
       "200": {
         "value": "#fbfaf4",
         "type": "color",
@@ -399,6 +395,11 @@
       },
       "700": {
         "value": "#323232",
+        "type": "color",
+        "parent": "Primitives/Value"
+      },
+      "1000": {
+        "value": "#121212",
         "type": "color",
         "parent": "Primitives/Value"
       }
@@ -938,9 +939,17 @@
     "050": {
       "value": "{dimension.base-8.50}",
       "type": "spacing"
+    },
+    "075": {
+      "value": "{dimension.base-8.75}",
+      "type": "spacing"
     }
   },
   "dimension": {
+    "999": {
+      "value": "999px",
+      "type": "dimension"
+    },
     "base-8": {
       "25": {
         "value": "{dimension.base-8.100}*0.25",
@@ -948,6 +957,10 @@
       },
       "50": {
         "value": "{dimension.base-8.100}*0.5",
+        "type": "dimension"
+      },
+      "75": {
+        "value": "{dimension.base-8.100}*0.75",
         "type": "dimension"
       },
       "100": {
@@ -1005,20 +1018,19 @@
       }
     }
   },
-  "border": {
-    "radius": {
-      "circle": {
-        "value": "50%",
-        "type": "borderRadius"
-      },
-      "xs": {
-        "value": "{dimension.base-8.25}",
-        "type": "borderRadius"
-      },
-      "sm": {
-        "value": "{dimension.base-8.50}",
-        "type": "borderRadius"
-      }
+  "opacity": {
+    "50": {
+      "value": "0.5",
+      "type": "opacity",
+      "description": "Used as a background overlay to mute the background when another layer (e.g. modal, drawer) is opened."
+    },
+    "100": {
+      "value": "1",
+      "type": "opacity"
+    },
+    "transparent": {
+      "value": "0",
+      "type": "opacity"
     }
   }
 }

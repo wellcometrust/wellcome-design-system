@@ -4,18 +4,36 @@ import { registerTransforms } from "@tokens-studio/sd-transforms";
 import filterExcludeTokens from "./utils/filters/filterExcludeTokens.js";
 
 import formatFontFace from "./utils/formats/formatFontFace.js";
+import formatResponsiveCSS from "./utils/formats/formatResponsiveCSS.js";
 
 import transformFont from "./utils/transforms/transformFont.js";
 import transformToRem from "./utils/transforms/transformToRem.js";
 
+import CONSTANTS from "./utils/constants.js";
+
 registerTransforms(StyleDictionary);
 
 const tokenGroups = ["core", "semantic"];
+const excludeBreakpoints = Object.values(CONSTANTS.BREAKPOINTS);
 
 const common = {
   buildPath: "tokens-generated/",
   prefix: "wds",
   transformGroup: "tokens-studio",
+};
+
+const baseTokens = () => {
+  return tokenGroups.map((groupName) => {
+    const excluded = groupName === "semantic" ? excludeBreakpoints : [];
+
+    return {
+      destination: `css/${groupName}.css`,
+      format: "css/variables",
+      filter: (token) =>
+        token.filePath === `tokens/tokens-figma/${groupName}.json` &&
+        filterExcludeTokens(token, excluded),
+    };
+  });
 };
 
 const sd = new StyleDictionary({
@@ -24,15 +42,14 @@ const sd = new StyleDictionary({
     css: {
       ...common,
       transforms: ["name/kebab", "custom/rem"],
-      files: tokenGroups.map((groupName) => {
-        return {
-          destination: `css/${groupName}.css`,
-          format: "css/variables",
-          filter: (token) =>
-            token.filePath === `tokens/tokens-figma/${groupName}.json` &&
-            filterExcludeTokens(token),
-        };
-      }),
+      files: [
+        ...baseTokens(),
+        {
+          destination: "css/semantic-responsive.css",
+          format: "custom/css/responsive",
+          filter: (token) => filterExcludeTokens(token),
+        },
+      ],
     },
     fonts: {
       ...common,
@@ -72,6 +89,11 @@ sd.registerFormat({
     formatFontFace(allTokens, options),
 });
 
+sd.registerFormat({
+  name: "custom/css/responsive",
+  format: ({ dictionary }) => formatResponsiveCSS(dictionary),
+});
+
 sd.registerTransform({
   name: "custom/font",
   type: "attribute",
@@ -84,13 +106,9 @@ sd.registerTransform({
   type: "value",
   transitive: true,
   filter: (token) =>
-    [
-      "sizing",
-      "spacing",
-      "borderRadius",
-      "fontSizes",
-      "letterSpacing",
-    ].includes(token.type),
+    ["spacing", "borderRadius", "fontSizes", "letterSpacing"].includes(
+      token.type,
+    ),
   transform: (token) => transformToRem(token.value),
 });
 
