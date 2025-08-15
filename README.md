@@ -1,6 +1,6 @@
 # About
 
-This repo is used to contain the wellcome-design-system npm package which outputs style values for import into digital products across Wellcome.
+This repo is used to contain the [wellcome-design-system npm package](https://www.npmjs.com/package/@wellcometrust/wellcome-design-system) which outputs style values for import into digital products across Wellcome.
 
 Design tokens are created in Figma via Tokens Studio and can be pushed from within the plugin to a branch where they are stored as tokens.json.
 
