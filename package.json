@@ -1,35 +1,21 @@
 {
-  "name": "wellcome-design-system",
-  "version": "0.0.8",
-  "description": "Design system for Wellcome and Wellcome Collection products",
+  "name": "@wellcometrust/design-tokens-2025",
+  "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
-  "engines": {
-    "node": ">=18.18.0",
-    "npm": ">=9.8.1"
-  },
+  "files": [
+    "theme.json",
+    "theme.css",
+    "theme.js"
+  ],
+  "author": "Wellcome",
+  "license": "MIT",
+  "description": "Design tokens for Wellcome products",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wellcometrust/wellcome-design-system.git"
   },
-  "scripts": {
-    "build": "node build.js",
-    "lint": "eslint",
-    "split-json": "node split-json.js"
-  },
-  "author": "",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/wellcometrust/wellcome-design-system/issues"
   },
-  "homepage": "https://www.figma.com/design/6bg5Y3Y4gLXgSdVa8Da8Vy/Wellcome-design-system?node-id=316-9&t=c6cHC23OsadCwIg3-0",
-  "devDependencies": {
-    "@eslint/js": "^9.5.0",
-    "@tokens-studio/sd-transforms": "^0.16.1",
-    "eslint": "^9.5.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "globals": "^15.6.0",
-    "prettier": "^3.3.2",
-    "style-dictionary": "^4.0.0-prerelease.34"
-  }
+  "homepage": "https://github.com/wellcometrust/wellcome-design-system#readme"
 }
