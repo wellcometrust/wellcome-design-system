@@ -15,7 +15,7 @@ const jsonData = JSON.parse(rawData);
 const baseDir = path.join(__dirname, "tokens/tokens-figma");
 
 // Define keys to include
-const includeKeys = ["GLOBAL/core", "GLOBAL/semantic"];
+const includeKeys = ["00 Core", "01 Semantic"];
 
 // Function to write data to file
 const writeFile = (filePath, data) => {
@@ -27,7 +27,7 @@ const writeFile = (filePath, data) => {
 includeKeys.forEach((key) => {
   if (Object.prototype.hasOwnProperty.call(jsonData, key)) {
     // Split the key into parts
-    let keyParts = key.split("/");
+    let keyParts = key.split(" ");
 
     // Remove the first part if there are multiple parts
     if (keyParts.length > 1) {
