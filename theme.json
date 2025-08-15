@@ -7,56 +7,52 @@
     "xl": "120rem"
   },
   "spacing": {
-    "static": {
-      "space.0": "0",
-      "space.050": "0.25rem",
-      "space.075": "0.375rem",
-      "space.100": "0.5rem",
-      "space.150": "0.75rem",
-      "space.200": "1rem",
-      "space.300": "1.5rem",
-      "space.400": "2rem",
-      "space.600": "3rem",
-      "space.800": "4rem",
-      "space.900": "4.5rem", 
-      "space.1200": "6rem"
+    "0": "0",
+    "050": "0.25rem",
+    "075": "0.375rem",
+    "100": "0.5rem",
+    "150": "0.75rem",
+    "200": "1rem",
+    "300": "1.5rem",
+    "400": "2rem",
+    "600": "3rem",
+    "800": "4rem",
+    "900": "4.5rem", 
+    "1200": "6rem",
+    "2xs": {
+      "default": "0.25rem",
+      "sm": "0.25rem",
+      "md": "0.25rem"
     },
-    "responsive": {
-      "space.2xs": {
-        "default": "0.25rem",
-        "sm": "0.25rem",
-        "md": "0.25rem"
-      },
-      "space.xs": {
-        "default": "0.375rem",
-        "sm": "0.5rem",
-        "md": "0.5rem"
-      },
-      "space.sm": {
-        "default": "0.5rem",
-        "sm": "0.75rem",
-        "md": "1rem"
-      },
-      "space.md": {
-        "default": "1rem",
-        "sm": "1.5rem",
-        "md": "2rem"
-      },
-      "space.lg": {
-        "default": "1.5rem",
-        "sm": "2rem",
-        "md": "3rem"
-      },
-      "space.xl": {
-        "default": "2rem",
-        "sm": "3rem",
-        "md": "4rem"
-      },
-      "space.2xl": {
-        "default": "3rem",
-        "sm": "4.5rem",
-        "md": "6rem"
-      }
+    "xs": {
+      "default": "0.375rem",
+      "sm": "0.5rem",
+      "md": "0.5rem"
+    },
+    "sm": {
+      "default": "0.5rem",
+      "sm": "0.75rem",
+      "md": "1rem"
+    },
+    "md": {
+      "default": "1rem",
+      "sm": "1.5rem",
+      "md": "2rem"
+    },
+    "lg": {
+      "default": "1.5rem",
+      "sm": "2rem",
+      "md": "3rem"
+    },
+    "xl": {
+      "default": "2rem",
+      "sm": "3rem",
+      "md": "4rem"
+    },
+    "2xl": {
+      "default": "3rem",
+      "sm": "4.5rem",
+      "md": "6rem"
     }
   },
   "font": {
