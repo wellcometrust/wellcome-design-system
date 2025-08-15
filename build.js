@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 const themeJsonPath = path.join(__dirname, 'theme.json');
-const themeCssPath = path.join(__dirname, 'dist/theme.css');
-const themeJsPath = path.join(__dirname, 'dist/theme.js');
+const themeCssPath = path.join(__dirname, 'theme.css');
+const themeJsPath = path.join(__dirname, 'theme.js');
 
 function toCssVarsWithMedia(obj, breakpoints, prefix = '--', indent = '  ') {
 	let rootVars = '';
@@ -73,21 +73,20 @@ function toJs(obj) {
 }
 
 function main() {
-	if (!fs.existsSync(themeJsonPath)) {
-		console.error('theme.json not found');
-		process.exit(1);
-	}
+  try {
+    const theme = JSON.parse(fs.readFileSync(themeJsonPath, 'utf8'));
+    const breakpoints = theme.breakpoints || {};
 
-	const theme = JSON.parse(fs.readFileSync(themeJsonPath, 'utf8'));
-	const breakpoints = theme.breakpoints || {};
+    // Write theme.css
+    const css = toCssCategoryBlocks(theme, breakpoints);
+    fs.writeFileSync(themeCssPath, css);
 
-	// Write theme.css
-	const css = toCssCategoryBlocks(theme, breakpoints);
-	fs.writeFileSync(themeCssPath, css);
-
-	// Write theme.js
-	const js = toJs(theme);
-	fs.writeFileSync(themeJsPath, js);
+    // Write theme.js
+    const js = toJs(theme);
+    fs.writeFileSync(themeJsPath, js);
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 main();
