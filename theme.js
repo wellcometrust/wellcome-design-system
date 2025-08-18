@@ -130,12 +130,6 @@ export const theme = {
   color: {
     white: '#FFFFFF',
     black: '#000000',
-    annotations: {
-      purple: '#6549f5',
-      'purple-light': 'rgba(101, 73, 245, 0.2)',
-      green: '#15a045',
-      pink: '#ea07e4',
-    },
     neutral: {
       '10': '#F5F6EE',
       '20': '#D2D6D0',

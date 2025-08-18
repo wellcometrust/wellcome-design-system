@@ -194,11 +194,6 @@
   --wds-color-ui-red-10: #FFF0F2;
   --wds-color-ui-red-40: #E72343;
   --wds-color-ui-red-60: #6C131D;
-
-  --wds-color-annotations-purple: #6549f5;
-  --wds-color-annotations-purple-light: rgba(101, 73, 245, 0.2);
-  --wds-color-annotations-green: #15a045;
-  --wds-color-annotations-pink: #ea07e4;
   
   --wds-color-information-light: var(--wds-color-ui-blue-10);
   --wds-color-information-mid: var(--wds-color-ui-blue-40);
