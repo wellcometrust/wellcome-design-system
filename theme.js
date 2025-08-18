@@ -291,7 +291,7 @@ export const theme = {
         'focus-yellow': '#ffea00',
       },
     },
-    old: {
+    legacy: {
       black: '#000',
       white: '#fff',
       amber: {
