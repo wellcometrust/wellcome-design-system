@@ -47,7 +47,7 @@ Once a pull request with the necessary changes is merged, the developer:
 3. Set the package version using the npm cli:
 
   ```
-  npm version <major|minor|patch> -m "Released version %s: <brief_description>
+  npm version <major|minor|patch> -m "Released version %s: <brief_description>"
   ```
 
 4. Runs the following command to publish the new version of the package:
