@@ -2,6 +2,9 @@
   "name": "@wellcometrust/design-tokens-2025",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "build": "node build.js"
+  },
   "files": [
     "theme.json",
     "theme.css",
