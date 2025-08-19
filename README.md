@@ -1,18 +1,57 @@
-# Wellcome Design System
+# About
 
-## About
-This repo is used to build the [`wellcome-design-system` npm package](https://www.npmjs.com/package/wellcome-design-system) which outputs style values for import into digital products across Wellcome.
+This repo is used to contain the [wellcome-design-system npm package](https://www.npmjs.com/package/@wellcometrust/wellcome-design-system) which outputs style values for import into digital products across Wellcome.
 
-Design tokens are created in Figma via [Tokens Studio](https://tokens.studio/) and can be pushed from within the plugin to a branch where they are stored as [`tokens.json`](https://github.com/wellcometrust/wellcome-design-system/blob/main/tokens.json).
+Design tokens are created in Figma via Tokens Studio and can be pushed from within the plugin to a branch where they are stored as tokens.json.
 
-This tokens file is then used in conjunction with [Style Dictionary](https://amzn.github.io/style-dictionary/#/) to create style values in various required formats (css, js, tailwind).
+# Usage
 
-(TODO: we're currently only generating a js format)
+## CSS
 
-## Usage
-After an approved PR to `main`:
+```css
+@import '@wellcometrust/wellcome-design-system/theme.css';
 
-1. Pull the repo
-2. Run `npm run build` 
-3. Update the version number in package.json with appropriate [semver](https://semver.org/)
-4. Run `npm publish`
+.my-component {
+  font-size: var(--font-size-f3);
+}
+```
+
+## JS
+
+```js
+import theme from '@wellcometrust/wellcome-design-system/theme.json';
+// or
+import { theme } from '@wellcometrust/wellcome-design-system/theme';
+
+const config = {
+  'font-size-massive': theme.typography.['size.f6'];
+};
+```
+
+# Release Process
+
+1. A designer changes a design token in Figma.
+2. The designer pushes the changes to the tokens.json file via the Tokens Studio plugin.
+3. This creates a pull request in the Github repo.
+4. The pull request is assigned to a developer for step 5.
+5. The developer makes the necessary changes to the output files (theme.json, theme.css) on the same branch.
+6. The developer asks for a review of the pull request from another developer.
+7. Once approved, the developer merges the pull request and publishes the new version of the npm package.
+
+## Publishing to NPM
+
+Once a pull request with the necessary changes is merged, the developer:
+
+1. Updates the "version" in the package.json, using the appropriate semver.
+2. Runs the following command to publish the new version of the package:
+
+   ```
+   npm publish --access public
+   ```
+
+You can now `npm install @wellcometrust/wellcome-design-system@{version|latest}` to use the new version in your project.
+
+## Troubleshooting
+
+1. You must be a member of the @wellcometrust organization on npm to publish changes.
+2. Here are instructions on [how to publish to npm](https://docs.npmjs.com/creating-and-publishing-scoped-public-packages#publishing-scoped-public-packages).
