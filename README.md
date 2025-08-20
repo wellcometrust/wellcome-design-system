@@ -43,27 +43,26 @@ const config = {
 Once a pull request with the necessary changes is merged, the developer:
 
 1. Checks out a new branch, the name isn't particularly important, something appropriate such as `git checkout -b task/updates-version` is fine.
-2. Ensure the dependencies are up-to-date, run `npm ci`.
-3. Set the package version using the npm cli:
+2. Set the package version using the npm cli:
 
   ```
   npm version <major|minor|patch> -m "Released version %s: <brief_description>"
   ```
 
-4. Runs the following command to publish the new version of the package:
+3. Runs the following command to publish the new version of the package:
 
    ```
    npm publish --access public
    ```
 
-5. Push the branch *and the tags* to the Github repo:
+4. Push the branch *and the tags* to the Github repo:
 
   ```
   git push -u origin <branch_name> --follow-tags
   ```
 
-6. Create a pull request against `main`, request a review from other developers
-7. Once approved, merge the pull request into `main`.
+5. Create a pull request against `main`, request a review from other developers
+6. Once approved, merge the pull request into `main`.
 
 You can now `npm install @wellcometrust/wellcome-design-system@{version_number|latest}` to use the new version in your project.
 
