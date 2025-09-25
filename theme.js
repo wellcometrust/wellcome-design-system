@@ -91,9 +91,9 @@ export const theme = {
     spacious: '0.025rem',
   },
   'line-height': {
-    sm: '100%',
-    md: '130%',
-    lg: '150%',
+    sm: '1',
+    md: '1.3',
+    lg: '1.5',
   },
   'text-transform': { uppercase: 'uppercase' },
   opacity: {
