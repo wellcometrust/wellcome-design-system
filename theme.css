@@ -123,13 +123,15 @@
 :root {
   --wds-color-white: #FFFFFF;
   --wds-color-black: #000000;
+  --wds-color-neutral-05: #FAFBF7;
   --wds-color-neutral-10: #F5F6EE;
   --wds-color-neutral-20: #D2D6D0;
   --wds-color-neutral-30: #AFB5B1;
   --wds-color-neutral-40: #8C9593;
   --wds-color-neutral-50: #657373;
   --wds-color-neutral-60: #445254;
-  --wds-color-neutral-70: #223438; 
+  --wds-color-neutral-70: #223438;
+  --wds-color-neutral-80: #111A1C;
   --wds-color-pink-10: #FFF2FA;
   --wds-color-pink-20: #FFC9EA;
   --wds-color-pink-30: #FFA5DC;
