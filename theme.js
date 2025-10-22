@@ -131,6 +131,7 @@ export const theme = {
     white: '#FFFFFF',
     black: '#000000',
     neutral: {
+      '05': '#FAFBF7',
       '10': '#F5F6EE',
       '20': '#D2D6D0',
       '30': '#AFB5B1',
@@ -138,6 +139,7 @@ export const theme = {
       '50': '#657373',
       '60': '#445254',
       '70': '#223438',
+      '80': '#111A1C',
     },
     pink: {
       '10': '#FFF2FA',
