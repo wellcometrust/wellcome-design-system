@@ -190,6 +190,9 @@
   --wds-color-ui-green-10: #EFFCE3;
   --wds-color-ui-green-40: #81C14B;
   --wds-color-ui-green-60: #417F0D;
+  --wds-color-ui-grey-10: #F3F4F4;
+  --wds-color-ui-grey-40: #B8BABB;
+  --wds-color-ui-grey-60: #585F60;
   --wds-color-ui-yellow-10: #FFFEF0;
   --wds-color-ui-yellow-40: #DBCD00;
   --wds-color-ui-yellow-60: #544F00;
@@ -197,6 +200,9 @@
   --wds-color-ui-red-40: #E72343;
   --wds-color-ui-red-60: #6C131D;
   
+  --wds-color-disabled-light: var(--wds-color-ui-grey-10);
+  --wds-color-disabled-mid: var(--wds-color-ui-grey-40);
+  --wds-color-disabled-dark: var(--wds-color-ui-grey-60);
   --wds-color-information-light: var(--wds-color-ui-blue-10);
   --wds-color-information-mid: var(--wds-color-ui-blue-40);
   --wds-color-information-dark: var(--wds-color-ui-blue-60);
