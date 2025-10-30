@@ -215,6 +215,11 @@ export const theme = {
         '40': '#81C14B',
         '60': '#417F0D',
       },
+      grey: {
+        '10': '#F3F4F4',
+        '40': '#B8BABB',
+        '60': '#585F60',
+      },
       yellow: {
         '10': '#FFFEF0',
         '40': '#DBCD00',
@@ -225,6 +230,11 @@ export const theme = {
         '40': '#E72343',
         '60': '#6C131D',
       },
+    },
+    disabled: {
+      light: '#F3F4F4',
+      mid: '#B8BABB',
+      dark: '#585F60',
     },
     information: {
       light: '#EDF6FF',
