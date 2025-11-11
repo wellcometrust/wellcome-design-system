@@ -18,7 +18,7 @@
       "space.400": "2rem",
       "space.600": "3rem",
       "space.800": "4rem",
-      "space.900": "4.5rem", 
+      "space.900": "4.5rem",
       "space.1200": "6rem"
     },
     "responsive": {
@@ -299,7 +299,7 @@
         "200": "#baa4cd",
         "700": "#724e91"
       },
-      "UI": {
+      "ui": {
         "validation-green": "#0b7051",
         "validation-red": "#e01b2f",
         "focus-yellow": "#ffea00"

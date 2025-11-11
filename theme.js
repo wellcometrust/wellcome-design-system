@@ -297,7 +297,7 @@ export const theme = {
         '200': '#baa4cd',
         '700': '#724e91',
       },
-      UI: {
+      ui: {
         'validation-green': '#0b7051',
         'validation-red': '#e01b2f',
         'focus-yellow': '#ffea00',
