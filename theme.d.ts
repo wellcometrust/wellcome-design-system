@@ -277,7 +277,7 @@ export interface Theme {
         '200': string;
         '700': string;
       };
-      UI: {
+      ui: {
         'validation-green': string;
         'validation-red': string;
         'focus-yellow': string;
