@@ -2,10 +2,12 @@
   "name": "@wellcometrust/wellcome-design-system",
   "version": "1.0.3",
   "main": "index.js",
+  "types": "theme.d.ts",
   "files": [
     "theme.json",
     "theme.css",
-    "theme.js"
+    "theme.js",
+    "theme.d.ts"
   ],
   "author": "Wellcome",
   "license": "MIT",
