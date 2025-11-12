@@ -72,7 +72,7 @@
 
 :root {
   --wds-letter-spacing-tight: -0.03125rem;
-  --wds-letter-spacing-comfortable: 0.0125rem;
+  --wds-letter-spacing-comfortable: 0;
   --wds-letter-spacing-spacious: 0.025rem;
 }
 
