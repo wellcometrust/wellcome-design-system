@@ -87,7 +87,7 @@ export const theme = {
   },
   'letter-spacing': {
     tight: '-0.03125rem',
-    comfortable: '0.0125rem',
+    comfortable: '0',
     spacious: '0.025rem',
   },
   'line-height': {
