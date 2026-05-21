@@ -4,6 +4,18 @@ export interface ResponsiveValue {
   md: string;
 }
 
+export interface TypographyValue {
+  fontFamily: string;
+  fontWeight: string;
+  fontSize: string;
+  lineHeight: string;
+  letterSpacing: string;
+}
+
+export type TypographySizeKey = 'xxl' | 'xl' | 'lg' | 'md' | 'sm' | 'xs';
+
+export type SizeVariants = Partial<Record<TypographySizeKey, TypographyValue>>;
+
 export interface Theme {
   breakpoints: {
     xs: string;
@@ -75,6 +87,32 @@ export interface Theme {
   };
   'text-transform': {
     uppercase: string;
+  };
+  typography: {
+    body: {
+      regular: SizeVariants;
+      strong: SizeVariants;
+    };
+    display: {
+      strong: SizeVariants;
+    };
+    caption: {
+      regular: SizeVariants;
+      strong: SizeVariants;
+    };
+    heading: {
+      sans: {
+        strong: SizeVariants;
+      };
+      brand: {
+        regular: SizeVariants;
+        strong: SizeVariants;
+      };
+    };
+    label: {
+      strong: SizeVariants;
+      regular: SizeVariants;
+    };
   };
   opacity: {
     '25': string;
