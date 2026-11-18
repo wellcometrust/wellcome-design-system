@@ -1,0 +1,10 @@
+apiVersion: backplane/v1
+kind: Component
+metadata:
+  name: wellcome-design-system
+  title: Wellcome Design System
+  description: Style values for Wellcome digital products
+spec:
+  lifecycle: production
+  owner: team:core
+  type: library
